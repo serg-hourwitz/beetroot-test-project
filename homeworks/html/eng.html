@@ -1,71 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My English resume</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
-    <header>
-      <nav>
-        `<ul>
-          <li>
-            <a href="../../index.html">HOME</a>
+    <!-- header -->
+    <header class="header">
+      <nav class="navigation">
+        <ul class="nav-list">
+          <li class="nav-list-item">
+            <a class="home" href="../../index.html">HOME</a>
           </li>
-          <li>
-            <a href="./index.html">українська версія</a>
+          <li class="nav-list-item">
+            <a class="version" href="./index.html">ukrainian version</a>
           </li>
         </ul>
       </nav>
       <figure>
-        <img src="./img/0-02-05-dc67eac70c7fb0b662e672ece6f191c34aa67c6f78a1a52561e57f63452c0e1b_253e0ef0372edd56.jpg"
-          alt="photo" style="width: 30%;" title="my photo">
+        <img class="my-photo"
+          src="./img/0-02-05-dc67eac70c7fb0b662e672ece6f191c34aa67c6f78a1a52561e57f63452c0e1b_253e0ef0372edd56.jpg"
+          alt="photo"
+          style="width: 30%"
+          title="my photo"
+        />
         <figcaption>My photo</figcaption>
       </figure>
     </header>
-    
-    <main>
-      <h1>
-      Serhiy Hourwitz
-    </h1>
+    <!-- main -->
+    <main class="main">
+      <h1>Serhiy Hourwitz</h1>
 
-    <h2>
-      Front-end Developer
-    </h2>
-    <h3>Education</h3>
-    <p>"Beetroot Academy"</p>
-    
-    <h3>Qualification</h3>
-    <span>Trainee / Junior front-end розробник</span>
-    
-    <h3>Hard skills</h3>
-    <ul>
-      <li>I know HTML and can do semantic markup</li>
-      <li>I have skills in working with pre- and post-processors</li>
-      <li>I have skills in manipulating the DOM tree</li>
-      <li>I have skills in working with Git, GitHub</li>
-      <li>I have experience with Figma</li>
-      <li>I know how to work with APIs (Ajax, fetch)</li>
-      <li>I know how to apply CSS styles and visual effects to the layout</li>
-      <li>I have experience using JavaScript (primitives, objects, arrays, functions)</li>
-      <li>I understand the logic of client-server architecture in the context of writing real applications</li>
-      <li>I have experience in creating CSS animations, transformations and other styles
-      </li>
-      <li>I know how to work with basic JavaScript tools</li>
-      <li>I have skills in creating web applications using React</li>
-      <li>Experience with web servers</li>
-      <li>I know how to work with the console, DevTools and check the code for errors</li>
-    </ul>
+      <h2>Front-end Developer</h2>
+
+      <div class="main-info">
+        <div class="education">
+          <h3>Education</h3>
+          <p>"Beetroot Academy"</p>
+        </div>
+        <div class="qualification">
+          <h3>Qualification</h3>
+          <span>Trainee / Junior front-end Developer</span>
+        </div>
+        <div class="hard-skills">
+                <h3>Hard skills</h3>
+                <ul class="hard-skills-list">
+                  <li>I know HTML and can do semantic markup</li>
+                  <li>I have skills in working with pre- and post-processors</li>
+                  <li>I have skills in manipulating the DOM tree</li>
+                  <li>I have skills in working with Git, GitHub</li>
+                  <li>I have experience with Figma</li>
+                  <li>I know how to work with APIs (Ajax, fetch)</li>
+                  <li>I know how to apply CSS styles and visual effects to the layout</li>
+                  <li>
+                    I have experience using JavaScript (primitives, objects, arrays,
+                    functions)
+                  </li>
+                  <li>
+                    I understand the logic of client-server architecture in the context of
+                    writing real applications
+                  </li>
+                  <li>
+                    I have experience in creating CSS animations, transformations and
+                    other styles
+                  </li>
+                  <li>I know how to work with basic JavaScript tools</li>
+                  <li>I have skills in creating web applications using React</li>
+                  <li>Experience with web servers</li>
+                  <li>
+                    I know how to work with the console, DevTools and check the code for
+                    errors
+                  </li>
+                </ul>
+        </div>
+      </div>
     </main>
-    
-    <footer>
-      <h3>
-        Contacts
-      </h3>
-      <ul>
+    <!-- footer -->
+    <footer class="footer">
+      <h3>Contacts</h3>
+      <ul class="contacts-list">
         <li>
           <a href="tel:+380676708118">+38 067 670-81-18</a>
         </li>
@@ -74,22 +90,45 @@
         </li>
         <li>
           <a href="https://github.com/serg-hourwitz" target="_blank">
-            <img src="./img/github-icon-1-logo-svgrepo-com.svg" alt="github-icon" style="width: 12px;">github</a>
+            <img
+              src="./img/github-icon-1-logo-svgrepo-com.svg"
+              alt="github-icon"
+              style="width: 12px"
+            />github</a
+          >
         </li>
         <li>
-          <a href="https:/t.me/ATPchamp007" target="_blank"><img src="./img/telegram_logo_icon_144811.svg" alt="telegram-icon"
-              style="width: 15px;">ATPchamp007</a>
+          <a href="https:/t.me/ATPchamp007" target="_blank"
+            ><img
+              src="./img/telegram_logo_icon_144811.svg"
+              alt="telegram-icon"
+              style="width: 15px"
+            />ATPchamp007</a
+          >
         </li>
         <li>
-          <a href="https://www.facebook.com/profile.php?id=100076080039387" target="_blank"><img
-              src="./img/facebook-icon-logo-svgrepo-com.svg" alt="facebook-icon" style="width: 12px;">Facebook</a>
+          <a
+            href="https://www.facebook.com/profile.php?id=100076080039387"
+            target="_blank"
+            ><img
+              src="./img/facebook-icon-logo-svgrepo-com.svg"
+              alt="facebook-icon"
+              style="width: 12px"
+            />Facebook</a
+          >
         </li>
         <li>
-          <a href="https://www.linkedin.com/in/serhiy-hourwitz-319bb8bb/" target="_blank"><img src="./img/linkedin.svg"
-              alt="linkedin-icon" style="width: 15px;">Linkedin</a>
+          <a
+            href="https://www.linkedin.com/in/serhiy-hourwitz-319bb8bb/"
+            target="_blank"
+            ><img
+              src="./img/linkedin.svg"
+              alt="linkedin-icon"
+              style="width: 15px"
+            />Linkedin</a
+          >
         </li>
       </ul>
     </footer>
   </body>
-
 </html>
