@@ -1,3 +1,7 @@
+* {
+  scroll-behavior: smooth;
+}
+
 body {
   background: url(./img/25616.jpg);
   font-family: "Fira Code";
@@ -29,13 +33,21 @@ h3 {
   margin: 40px 0 40px;
 }
 
-.navigation {
+.navigation,.secondary-navigation {
   padding-bottom: 15px;
 }
 
 .nav-list {
   list-style: none;
   padding: 0;
+}
+
+.secondary-navigation-list {
+  list-style: none;
+}
+
+.secondary-navigation-list li {
+  font-weight: bolder;
 }
 
 .home,
