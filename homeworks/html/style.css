@@ -75,6 +75,10 @@ h2 {
   margin-bottom: 10px;
 }
 
+.education p, .qualification span {
+  font-weight: 500;
+}
+
 .main h3 {
   margin-bottom: 5px;
 }
