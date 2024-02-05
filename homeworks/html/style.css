@@ -58,12 +58,20 @@ h3 {
 }
 
 .my-photo {
+  display: block;
   border: 2px solid gray;
   border-radius: 10px;
+  margin: 0 auto;
+  transition: 1s;
+}
+
+.my-photo:hover {
+  transform: rotate(360deg);
 }
 
 figcaption {
   font-size: small;
+  text-align: center;
 }
 
 /* main */
