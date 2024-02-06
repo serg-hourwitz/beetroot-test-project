@@ -20,6 +20,11 @@ a:hover {
   text-decoration: underline;
 }
 
+h1,h2,h3,h4,h5,h6 {
+  margin: 0;
+  padding: 0;
+}
+
 h1,
 h2 {
   text-align: center;
@@ -73,7 +78,7 @@ h3 {
   transform: rotate(360deg);
 }
 
-figcaption {
+.my-photo-figcaption {
   font-size: small;
   text-align: center;
 }
@@ -84,12 +89,12 @@ figcaption {
   margin-bottom: 40px;
 }
 
-h1 {
+.main-title {
   text-shadow: 0 0 10px;
   font-size: xxx-large;
 }
 
-h2 {
+.main-secondary-title {
   margin-bottom: 40px;
   text-shadow: 0 0 5px;
   font-size: xx-large;
@@ -101,7 +106,7 @@ h2 {
   margin-bottom: 10px;
 }
 
-.education p, .qualification span {
+.education-info, .qualification-info {
   font-weight: 500;
 }
 
@@ -119,11 +124,11 @@ h2 {
   font-weight: 500;
 }
 
-.hard-skills-list li:hover {
+.hard-skills-item:hover {
   list-style-type: disc;
 }
 
-.hard-skills-list li::first-letter {
+.hard-skills-item::first-letter {
   font-size: large;
   font-weight: bold;
 }
@@ -141,20 +146,20 @@ h2 {
   margin: 0 auto;
 }
 
-.contacts-list li {
+.contacts-list-item {
   padding-bottom: 5px;
 }
 
-.contacts-list a {
+.contacts-list-link, .up-link {
   font-size: larger;
   font-weight: bold;
 }
 
-.contacts-list li img {
+.contacts-list-icon {
   margin-right: 5px;
   transition: all 1s;
 }
 
-.contacts-list li img:hover {
+.contacts-list-icon:hover {
   transform: scale(1.4);
 }
