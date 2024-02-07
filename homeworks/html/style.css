@@ -103,7 +103,7 @@ h3 {
 .education,
 .qualification {
   text-align: center;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .education-info, .qualification-info {
@@ -145,6 +145,10 @@ h3 {
 
 .footer {
   margin-bottom: 45px;
+}
+
+.footer-title {
+  margin-bottom: 20px;
 }
 
 .contacts-list {
