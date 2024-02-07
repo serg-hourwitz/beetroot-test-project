@@ -167,6 +167,22 @@ h3 {
   font-weight: bold;
 }
 
+.contacts-list-link:link {
+  color: #FF0000
+}
+
+.contacts-list-link:visited {
+  color: #00FF00
+}
+
+.contacts-list-link:hover {
+  color: #FF00FF;
+}
+
+.contacts-list-link:active {
+  color: #0000FF
+}
+
 .contacts-list-icon {
   margin-right: 5px;
   transition: all 1s;
