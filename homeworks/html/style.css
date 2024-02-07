@@ -8,7 +8,7 @@
 body {
   background: url(./img/25616.jpg);
   font-family: "Fira Code";
-  color: #1F2C47;
+  color: #1f2c47;
 }
 
 a {
@@ -20,7 +20,12 @@ a:hover {
   text-decoration: underline;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
   padding: 0;
 }
@@ -42,7 +47,8 @@ h3 {
   margin: 40px 0 40px;
 }
 
-.navigation,.secondary-navigation {
+.navigation,
+.secondary-navigation {
   padding-bottom: 15px;
   margin-left: 30px;
 }
@@ -106,7 +112,8 @@ h3 {
   margin-bottom: 20px;
 }
 
-.education-info, .qualification-info {
+.education-info,
+.qualification-info {
   font-weight: 500;
 }
 
@@ -137,7 +144,8 @@ h3 {
   font-weight: bold;
 }
 
-.hard-skills-item:hover::marker, .hard-skills-item:hover::first-letter{
+.hard-skills-item:hover::marker,
+.hard-skills-item:hover::first-letter {
   color: crimson;
 }
 
@@ -162,25 +170,26 @@ h3 {
   padding-bottom: 5px;
 }
 
-.contacts-list-link, .up-link {
+.contacts-list-link,
+.up-link {
   font-size: larger;
   font-weight: bold;
 }
 
 .contacts-list-link:link {
-  color: #FF0000
+  color: #ff0000;
 }
 
 .contacts-list-link:visited {
-  color: #00FF00
+  color: #00ff00;
 }
 
 .contacts-list-link:hover {
-  color: #FF00FF;
+  color: #ff00ff;
 }
 
 .contacts-list-link:active {
-  color: #0000FF
+  color: #0000ff;
 }
 
 .contacts-list-icon {
