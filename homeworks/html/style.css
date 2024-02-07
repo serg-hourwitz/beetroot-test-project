@@ -119,6 +119,10 @@ h3 {
   margin: 0 auto;
 }
 
+.hard-skills-list * {
+  margin-bottom: 10px;
+}
+
 .hard-skills-list {
   list-style-type: circle;
   font-weight: 500;
