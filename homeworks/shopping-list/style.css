@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  transition: all .1s ease-in;
+}
+
+body {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 18px;
+  color: #FFFFFF;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  margin: 0;
+  padding: 0;
+}
+
+/* header */
+
+.header {
+  background: #4A4F56;
+  color: #FF8984;
+  text-align: center;
+}
+
+.header-title {
+  font-weight: 700;
+  font-size: 24px; 
+  padding: 19px 0 4px; 
+}
+
+.header-title + span p {
+  font-weight: 400;
+  font-size: 16px;
+  padding-bottom: 12px;
+}
+
+/* footer */
+
+.footer {
+  background: #3B3F45;
+  padding-bottom: 45px;
+}
+
+.footer-container {
+  max-width: 534px;
+  margin: 0 auto;
+  padding: 20px 0 45px;
+}
+  /* purchase-items */
+.purchase-item {
+  display: flex;
+  align-items: flex-start;
+  padding: 12px 0 14px 12px;
+  border-top: 2px solid transparent;
+  border-bottom: 2px solid transparent;
+}
+
+.purchase-item > label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.purchase-item-info {
+  display: flex;
+  align-items: center;
+}
+
+.purchase-item:nth-child(odd) {
+  background: #88839E;
+}
+
+.purchase-item:nth-child(even) {
+  background: #7A7593;
+}
+
+.purchase-item:hover {
+  background: #625E77;
+  border-top: 2px solid #FFFFFF;
+  border-bottom: 2px solid #FFFFFF;
+  cursor: pointer;
+}
+
+/* checkbox */
+
+[type="checkbox"] {
+  width: 19px;
+  height: 19px;
+  cursor: pointer;
+}
+
+.checkbox:checked + div span {
+  text-decoration: line-through;
+  color: #9B96AC;
+}
+
+.checkbox:active + div {
+  background: #FF8984 ;
+}
+
+.purchase-item-name {
+  padding-left: 16px;
+}
+
+.purchase-item-name-note {
+  font-size: 11px;
+  padding-left: 4px;
+}
+
+/* footer slogan */
+
+.footer-slogan {
+  max-width: 534px;
+  margin: 0 auto;
+  background: #4A4F56;
+}
+
+.footer-slogan-text {
+  display: block;
+  text-align: center;
+  color: #FF8984;
+  padding: 12px 0 12px;
+}
+
+.footer-slogan-text::after {
+  content: ')';
+}
