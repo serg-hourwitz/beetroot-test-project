@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="../../favicon/favicon.ico"
+      type="image/x-icon"
+    />
+    <title>CSS Block Model</title>
+    <!-- * styles -->
+    <link rel="stylesheet" href="../styles/normalize.css" />
+    <link rel="stylesheet" href="../CSS-Block-Model/style.css" />
+  </head>
+  <body>
+    <div><a href="../../index.html">HOME</a></div>
+    <div class="app">
+      <!-- header -->
+
+      <header class="header container" id="header">
+        <!-- * navigation -->
+        <nav class="navigation">
+          <!-- * logo -->
+          <div class="logo">
+            <a class="logo-link" href="#"
+              ><img src="../../favicon/favicon.png" alt="logo"
+            /></a>
+          </div>
+          <!-- * nav menu -->
+          <ul class="nav-menu">
+            <li class="nav-menu-item">
+              <a class="nav-menu-link" href="#main">Main</a>
+            </li>
+            <li class="nav-menu-item">
+              <a class="nav-menu-link" href="#section-top">Section 1</a>
+            </li>
+            <li class="nav-menu-item">
+              <a class="nav-menu-link" href="#section-map">Section 2</a>
+            </li>
+            <li class="nav-menu-item">
+              <a class="nav-menu-link" href="#section-development">Section 3</a>
+            </li>
+            <li class="nav-menu-item">
+              <a class="nav-menu-link" href="#footer">Footer</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <!-- main -->
+
+      <main class="main container" id="main">
+        <h1 class="main-title">My first semantic website with CSS Box Model</h1>
+        <!-- * main content wrapper -->
+        <div class="main-content-wrapper">
+          <aside class="aside">
+            <h3 class="aside-title">
+              MAIN NEWS
+            </h3>
+            <ul class="aside-content">
+              <li class="aside-content-item"><a class="aside-content-link" href="#">Lorem ipsum dolor sit amet.</a></li>
+              <li class="aside-content-item"><a class="aside-content-link" href="#">Lorem ipsum dolor sit amet.</a></li>
+              <li class="aside-content-item"><a class="aside-content-link" href="#">Lorem ipsum dolor sit amet.</a></li>
+              <li class="aside-content-item"><a class="aside-content-link" href="#">Lorem ipsum dolor sit amet.</a></li>
+              <li class="aside-content-item"><a class="aside-content-link" href="#">Lorem ipsum dolor sit amet.</a></li>
+            </ul>
+          </aside>
+          <!-- * section wrapper -->
+          <div class="section-wrapper">
+            <!-- articles section -->
+
+            <section id="section-top">
+              <h2 class="section-title">Section Top title</h2>
+              <div class="articles-wrapper">
+                <article class="article-wrapper-item">
+                  <!-- * article -->
+                  <h3>Article 1 title</h3>
+                  <figure class="article-item-image-block">
+                    <img
+                      class="article-item-image"
+                      src="https://picsum.photos/id/0/200"
+                      alt="pic.1"
+                      title="pic.1"
+                    />
+                    <figcaption class="article-image-caption">
+                      Pic. 1
+                    </figcaption>
+                  </figure>
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Impedit, tempore?
+                  </p>
+                </article>
+                <!-- * article -->
+                <article class="article-wrapper-item">
+                  <h3>Article 2 title</h3>
+                  <figure class="article-item-image-block">
+                    <img
+                      class="article-item-image"
+                      src="https://picsum.photos/id/20/200"
+                      alt="pic.2"
+                      title="pic.2"
+                    />
+                    <figcaption class="article-image-caption">
+                      Pic. 2
+                    </figcaption>
+                  </figure>
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Impedit, tempore?
+                  </p>
+                </article>
+                <!-- * article -->
+                <article class="article-wrapper-item-block">
+                  <h3>Article 3 title</h3>
+                  <figure class="article-item-image">
+                    <img
+                      class="article-item-image"
+                      src="https://picsum.photos/id/26/200"
+                      alt="pic.3"
+                      title="pic.3"
+                    />
+                    <figcaption class="article-image-caption">
+                      Pic. 3
+                    </figcaption>
+                  </figure>
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Impedit, tempore?
+                  </p>
+                </article>
+              </div>
+            </section>
+
+            <!-- section with map -->
+
+            <section
+              id="section-map"
+              style="
+                background: url(../html/img/BG-for-Zoom_4-\(polaroids\).png);
+                height: auto;
+              "
+            >
+              <h2 class="section-title">Section 2 title</h2>
+              <map name="lviv">
+                <iframe
+                  class="map"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d82352.63508428869!2d24.01223555!3d49.83268904999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473add7c09109a57%3A0x4223c517012378e2!2z0JvRjNCy0L7Qsiwg0JvRjNCy0L7QstGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCA3OTAwMA!5e0!3m2!1sru!2sua!4v1706897071248!5m2!1sru!2sua"
+                  width="600"
+                  height="450"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </map>
+
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor
+                nulla sunt inventore! Beatae suscipit quasi facilis asperiores,
+                enim ex ut, rem accusamus consequuntur alias error maxime neque
+                est rerum vitae dolorem sed! Eos adipisci repudiandae sapiente
+                recusandae sed earum, dolore magni saepe doloremque? Nobis
+                ducimus deserunt odio aperiam! Earum, sed nulla perferendis
+                culpa, aut cumque voluptas magni maiores aliquam assumenda quo
+                dolor laudantium similique quae ratione fugiat eligendi natus.
+                Ut saepe corrupti qui quod, perspiciatis quos, ab hic
+                consequatur, a expedita atque magnam? Eligendi quisquam minima
+                accusantium a velit harum iusto mollitia, dignissimos ea
+                voluptate, laudantium nesciunt. Ipsam similique labore ipsa
+                magnam inventore odio, dolorum numquam. Aliquid vel tenetur
+                quos, commodi eligendi eos possimus doloribus tempore officia ea
+                accusantium fugiat.
+              </p>
+            </section>
+            <!-- * section development -->
+            <section id="section-development">
+              <h2 class="section-title">Section 3 title</h2>
+              <div class="development-video">
+                <iframe
+                  class="youtube"
+                  width="474"
+                  height="267"
+                  src="https://www.youtube.com/embed/dEBVe8Ij7JU?list=PLytQ0YczAfcdj-OUqWO20vPsr0ix0M1Us"
+                  title="Front-End розробка. Сучасні тренди"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </section>
+          </div>
+        </div>
+      </main>
+
+      <!-- footer -->
+
+      <footer class="footer container" id="footer">
+        <!-- * footer navigation -->
+        <nav class="footer-nav">
+          <div>
+            <a href="#"><img src="../../favicon/favicon.png" alt="logo" /></a>
+          </div>
+          <!-- * footer naigation menu -->
+          <ul class="footer-nav-menu">
+            <li class="footer-nav-menu-item">
+              <a
+                class="footer-nav-meny-link"
+                href="https://beetroot.academy/courses/online"
+                target="_blank"
+                >Courses for beginners</a
+              >
+            </li>
+            <li class="footer-nav-menu-item">
+              <a
+                class="footer-nav-meny-link"
+                href="https://beetroot.academy/courses/online/front-end"
+                target="_blank"
+                >Front-End Development</a
+              >
+            </li>
+            <li class="footer-nav-menu-item">
+              <a
+                class="footer-nav-meny-link"
+                href="https://lms.beetroot.academy/studying/clrejrc0qkt4d0813ymyj3tek/theory/clrf0sl9fmx6208131k8pxdjc"
+                target="_blank"
+                >Lesson about Semantic HTML5</a
+              >
+            </li>
+            <li class="footer-nav-menu-item">
+              <a
+                class="footer-nav-meny-link"
+                href="https://lms.beetroot.academy/studying/clrejrc0qkt4d0813ymyj3tek/theory/clrf0sla7mx6m0813ocvr1tlw"
+                >CSS Box Model</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </footer>
+    </div>
+  </body>
+</html>
