@@ -2,17 +2,22 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  transition: all .1s ease-in;
+  transition: all 0.1s ease-in;
 }
 
 body {
   font-family: "Roboto";
   font-weight: 400;
   font-size: 18px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
   padding: 0;
 }
@@ -20,15 +25,15 @@ h1,h2,h3,h4,h5,h6 {
 /* header */
 
 .header {
-  background: #4A4F56;
-  color: #FF8984;
+  background: #4a4f56;
+  color: #ff8984;
   text-align: center;
 }
 
 .header-title {
   font-weight: 700;
-  font-size: 24px; 
-  padding: 19px 0 4px; 
+  font-size: 24px;
+  padding: 19px 0 4px;
 }
 
 .header-title + span p {
@@ -40,7 +45,7 @@ h1,h2,h3,h4,h5,h6 {
 /* footer */
 
 .footer {
-  background: #3B3F45;
+  background: #3b3f45;
   padding-bottom: 45px;
 }
 
@@ -49,7 +54,7 @@ h1,h2,h3,h4,h5,h6 {
   margin: 0 auto;
   padding: 20px 0 45px;
 }
-  /* purchase-items */
+/* purchase-items */
 .purchase-item {
   display: flex;
   align-items: flex-start;
@@ -70,17 +75,17 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .purchase-item:nth-child(odd) {
-  background: #88839E;
+  background: #88839e;
 }
 
 .purchase-item:nth-child(even) {
-  background: #7A7593;
+  background: #7a7593;
 }
 
 .purchase-item:hover {
-  background: #625E77;
-  border-top: 2px solid #FFFFFF;
-  border-bottom: 2px solid #FFFFFF;
+  background: #625e77;
+  border-top: 2px solid #ffffff;
+  border-bottom: 2px solid #ffffff;
   cursor: pointer;
 }
 
@@ -94,11 +99,11 @@ h1,h2,h3,h4,h5,h6 {
 
 .checkbox:checked + div span {
   text-decoration: line-through;
-  color: #9B96AC;
+  color: #9b96ac;
 }
 
 .checkbox:active + div {
-  background: #FF8984 ;
+  background: #ff8984;
 }
 
 .purchase-item-name {
@@ -115,16 +120,16 @@ h1,h2,h3,h4,h5,h6 {
 .footer-slogan {
   max-width: 534px;
   margin: 0 auto;
-  background: #4A4F56;
+  background: #4a4f56;
 }
 
 .footer-slogan-text {
   display: block;
   text-align: center;
-  color: #FF8984;
+  color: #ff8984;
   padding: 12px 0 12px;
 }
 
 .footer-slogan-text::after {
-  content: ')';
+  content: ")";
 }
