@@ -2,13 +2,9 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  transition: all 0.1s ease-in;
 }
 
 body {
-  font-family: "Roboto";
-  font-weight: 400;
-  font-size: 18px;
   color: #ffffff;
 }
 
@@ -31,14 +27,19 @@ h6 {
 }
 
 .header-title {
+  font-family: "Roboto";
   font-weight: 700;
   font-size: 24px;
   padding: 19px 0 4px;
 }
 
-.header-title + span p {
+.shopping-slogan {
+  font-family: "Roboto";
   font-weight: 400;
   font-size: 16px;
+}
+
+.shopping-slogan p {
   padding-bottom: 12px;
 }
 
@@ -55,18 +56,19 @@ h6 {
   padding: 20px 0 45px;
 }
 /* purchase-items */
-.purchase-item {
+.purchase-check {
   display: flex;
-  align-items: flex-start;
   padding: 12px 0 14px 12px;
   border-top: 2px solid transparent;
   border-bottom: 2px solid transparent;
+  cursor: pointer;
+  transition: all 0.1s ease-in;
 }
 
-.purchase-item > label {
-  display: flex;
-  align-items: center;
-  cursor: pointer;
+.purchase-check:hover {
+  background: #625e77;
+  border-top: 2px solid #ffffff;
+  border-bottom: 2px solid #ffffff;
 }
 
 .purchase-item-info {
@@ -82,54 +84,49 @@ h6 {
   background: #7a7593;
 }
 
-.purchase-item:hover {
-  background: #625e77;
-  border-top: 2px solid #ffffff;
-  border-bottom: 2px solid #ffffff;
-  cursor: pointer;
-}
-
 /* checkbox */
 
-[type="checkbox"] {
+.checkbox {
   width: 19px;
   height: 19px;
   cursor: pointer;
 }
 
-.checkbox:checked + div span {
+.checkbox:checked + div {
   text-decoration: line-through;
   color: #9b96ac;
 }
+
 
 .checkbox:active + div {
   background: #ff8984;
 }
 
 .purchase-item-name {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 18px;
   padding-left: 16px;
 }
 
 .purchase-item-name-note {
+  font-family: "Roboto";
   font-size: 11px;
   padding-left: 4px;
 }
 
-/* footer slogan */
+/* footer button */
 
-.footer-slogan {
-  max-width: 535px;
+.footer-button {
+  width: 535px;
+  display: block;
   margin: 0 auto;
   background: #4a4f56;
-}
-
-.footer-slogan-text {
-  display: block;
-  text-align: center;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 18px;
   color: #ff8984;
+  border: none;
   padding: 12px 0 12px;
-}
-
-.footer-slogan-text::after {
-  content: ")";
+  cursor: pointer;
 }
