@@ -114,7 +114,7 @@ img {
 
 /* top section */
 
-.top-section {
+.top-section-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
