@@ -1,0 +1,128 @@
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #ffffff;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* HEADER */
+
+.header {
+  margin-bottom: 70px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0 15px;
+}
+
+.nav-list {
+  display: flex;
+  gap: 20px
+}
+
+.nav-list-link {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 16px;
+  color: #2f281e;
+  transition: all 0.5s ease-in-out;
+}
+
+.nav-list-link:hover {
+  color: #ff9900;
+}
+
+.nav-sign-wrapper {
+    display: flex;
+    gap: 30px;
+}
+
+.header-btn {
+  width: 110px;
+  padding: 15px 0 15px;
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.sign-in-btn {
+  border: 1px solid #bcd0e5;
+  color: #2f281e;
+  background: #ffffff;
+}
+
+.sign-up-btn {
+  border: none;
+  color: #ffffff;
+  background: #ff9900;
+}
+
+
+/* MAIN */
+
+/* top section */
+
+.top-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top-section-info {
+  max-width: 500px;
+}
+
+.main-title {
+  font-family: "Montserrat";
+  font-size: 44px;
+  padding-bottom: 30px;
+}
+
+.top-section-description {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 18px;
+  padding-bottom: 20px;
+}
+
+.start-btn {
+  width: 180px;
+  border: none;
+  border-radius: 5px;
+  background: #ff9900;
+  padding: 15px 0 15px;
+  font-family: "Poppins";
+  font-size: 16px;
+  color: #ffffff;
+}
