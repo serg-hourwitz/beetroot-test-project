@@ -48,11 +48,15 @@ img {
   margin-bottom: 70px;
 }
 
+.header-wrapper {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
 .nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 0 15px;
 }
 
 .nav-list {
@@ -133,7 +137,7 @@ img {
   font-family: "Montserrat";
   font-size: 44px;
   line-height: 54px;
-  padding-bottom: 30px;
+  margin-bottom: 30px;
   color: #2f281e;
 }
 
@@ -164,7 +168,7 @@ img {
 }
 
 .top-section-img {
-    width: 100%;
+  width: 100%;
 }
 /* #endregion */
 
