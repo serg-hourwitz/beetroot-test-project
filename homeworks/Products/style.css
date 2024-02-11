@@ -161,6 +161,10 @@ img {
   box-shadow: inset 0 0 15px #ff9900;
   background: #ffffff;
 }
+
+.top-section-img {
+    width: 100%;
+}
 /* #endregion */
 
 /* #endregion */
