@@ -50,6 +50,10 @@ a {
   gap: 20px;
 }
 
+.nav-list-item {
+    display: flex;
+}
+
 .nav-list-link {
   font-family: "Montserrat";
   font-weight: 400;
