@@ -40,6 +40,8 @@ img {
   width: 100%;
 }
 
+/* #region header */
+
 /* HEADER */
 
 .header {
@@ -109,9 +111,11 @@ img {
   color: #ff9900;
   box-shadow: inset 0 0 15px #ff9900;
 }
+/* #endregion */
 
+/* #region main */
 /* MAIN */
-
+/* #region top section */
 /* top section */
 
 .top-section-wrapper {
@@ -157,3 +161,6 @@ img {
   box-shadow: inset 0 0 15px #ff9900;
   background: #ffffff;
 }
+/* #endregion */
+
+/* #endregion */
