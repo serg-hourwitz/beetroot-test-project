@@ -9,7 +9,7 @@ body {
   background: #ffffff;
 }
 
-.container {
+.wrapper {
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -30,6 +30,10 @@ ul {
 
 a {
   text-decoration: none;
+}
+
+img {
+    width: 100%;
 }
 
 /* HEADER */
