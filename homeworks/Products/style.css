@@ -9,6 +9,8 @@ body {
   background: #ffffff;
   color: #544837;
   font-size: 16px;
+  min-height: 100vh;
+  font-family: "Montserrat";
 }
 
 .wrapper {
@@ -421,7 +423,6 @@ img {
 }
 
 .footer-links-title, .footer-staff-title {
-  font-family: "Montserrat";
   font-size: 20px;
   color: #2F281E;
   margin-bottom: 30px;
@@ -429,7 +430,6 @@ img {
 
 
 .footer-links-link, .footer-staff-link {
-  font-family: "Montserrat";
   font-weight: 500;
   color: #544837;
 }
@@ -440,7 +440,6 @@ img {
 
 .slogan {
   display: block;
-  font-family: "Montserrat";
   font-weight: 700;
   font-size: 20px;
   line-height: 30px;
@@ -454,7 +453,6 @@ img {
   border-radius: 5px;
   padding: 15px 0 15px 10px;
   margin-bottom: 25px;
-  font-family: "Montserrat";
   font-weight: 600;
   color: #BCD0E5;
 }
@@ -464,7 +462,6 @@ img {
 }
 
 .input::placeholder {
-  font-family: "Montserrat";
   font-weight: 400;
   color: #BCD0E5;
 }
