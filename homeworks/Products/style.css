@@ -172,8 +172,9 @@ img {
 }
 /* #endregion */
 /* #region design section */
-.top-section-wrapper {
+.design-section-wrapper {
   padding-bottom: 75px;
+  margin-bottom: 100px;
 }
 
 .design-section-title {
