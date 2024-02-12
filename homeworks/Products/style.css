@@ -415,6 +415,12 @@ img {
   gap: 130px;
 }
 
+.footer-links-list, .footer-staff-list {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
 .footer-links-title, .footer-staff-title {
   font-family: "Montserrat";
   font-size: 20px;
@@ -422,9 +428,6 @@ img {
   margin-bottom: 30px;
 }
 
-.footer-links-item,.footer-staff-item {
-  margin-bottom: 15px;
-}
 
 .footer-links-link, .footer-staff-link {
   font-family: "Montserrat";
@@ -433,7 +436,7 @@ img {
 }
 
 .footer-contact-wrapper {
-  width: 340px;
+  max-width: 340px;
 }
 
 .slogan {
@@ -452,6 +455,13 @@ img {
   border-radius: 5px;
   padding: 15px 0 15px 10px;
   margin-bottom: 25px;
+  font-family: "Montserrat";
+  font-weight: 600;
+  color: #BCD0E5;
+}
+
+.input:focus {
+  outline: none;
 }
 
 .input::placeholder {
