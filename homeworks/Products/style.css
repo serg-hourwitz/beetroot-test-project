@@ -239,4 +239,54 @@ img {
   color: #FF9900;
 }
 /* #endregion */
+/* #region benefits section */
+.benefits-section {
+  margin-bottom: 100px;
+}
+
+.benefits-section-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.benefits-section-description-wrapper {
+  max-width: 525px;
+}
+
+.about-validator-text, .benefits-section-description, .benefits-section-item-text {
+  font-family: "Montserrat";
+  font-weight: 500;
+}
+
+.about-validator-text {
+  line-height: 26px;
+}
+
+.benefits-section-title {
+  font-family: "Montserrat";
+  font-size: 36px;
+  color: #2F281E;
+  margin-bottom: 20px;
+}
+
+.benefits-section-description {
+  margin-bottom: 40px;
+}
+
+.benefits-section-item:not(.benefits-section-item:last-child) {
+  margin-bottom: 30px;
+}
+
+.benefits-section-item-title {
+  font-family: "Montserrat";
+  color: #2F281E;
+  margin-bottom: 10px;
+}
+
+.benefits-section-img {
+  width: 100%;
+}
+
+/* #endregion */
 /* #endregion */
