@@ -345,4 +345,54 @@ img {
   align-items: center;
 }
 /* #endregion */
+/* #region marketer section */
+.marketer-section {
+  margin-bottom: 170px;
+}
+
+.marketer-section-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.marketer-section-description-wrapper {
+  max-width: 485px;
+}
+
+.optimization,
+.marketer-section-description,
+.marketer-section-item-text {
+  font-family: "Montserrat";
+  font-weight: 500;
+  line-height: 26px;
+}
+
+.marketer-section-description {
+  margin-bottom: 40px;
+}
+
+.marketer-section-title {
+  font-family: "Montserrat";
+  font-size: 36px;
+  color: #2f281e;
+  margin-bottom: 20px;
+}
+
+.marketer-section-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.marketer-section-item-title {
+  font-family: "Montserrat";
+  color: #2f281e;
+  margin-bottom: 10px;
+}
+
+.marketer-section-img {
+  width: 100%;
+}
+/* #endregion */
 /* #endregion */
