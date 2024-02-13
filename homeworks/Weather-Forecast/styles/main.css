@@ -1,0 +1,25 @@
+/* *Global */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Lucida Sans Unicode";
+  font-size: 22px;
+  color: #ffffff;
+}
+
+.wrapper {
+  max-width: 1470px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
