@@ -19,10 +19,23 @@
   border: 2px solid #ffffff;
   border-bottom: none;
   margin-bottom: 35px;
+  cursor: pointer;
 }
 
 .forecast-wrapper-table-list {
   display: flex;
+}
+
+.forecast-wrapper-table-item {
+  transition: all 1s ease-in-out;
+}
+
+.forecast-wrapper-table-item:hover {
+  transform: scale(1.1);
+  border: none;
+  border-radius: 30px;
+  box-shadow: inset 0 0 15px;
+  opacity: .8;
 }
 
 .city-name,
@@ -113,6 +126,9 @@
   width: 100%;
   background-color: #666699;
 }
+
+/* greeting */
+
 .greeting {
   margin-bottom: 120px;
 }
