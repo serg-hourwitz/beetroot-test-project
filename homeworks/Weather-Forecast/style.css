@@ -1,7 +1,7 @@
 /* * Main */
 .main-wrapper {
-  background-color: #3399cc;
-  border: 25px solid #2b81ac;
+  background-color: var(--c-blue);
+  border: 25px solid var(--c-dark-blue);
 }
 
 .forecast-wrapper {
@@ -10,6 +10,7 @@
 }
 
 .forecast-wrapper-title {
+  /* attention */
   display: block;
   font-size: 21px;
   padding-top: 70px;
@@ -18,7 +19,7 @@
 
 
 .forecast-wrapper-table {
-  border: 2px solid #ffffff;
+  border: 2px solid var(--c-white);
   border-bottom: none;
   margin-bottom: 35px;
   cursor: pointer;
@@ -29,7 +30,7 @@
 }
 
 .forecast-wrapper-table-item {
-  transition: all 1s ease-in-out;
+  transition: var(--t-normal);
 }
 
 .forecast-wrapper-table-item:hover {
@@ -56,77 +57,77 @@
 }
 
 .forecast-wrapper-table-row {
-  border-bottom: 2px solid #ffffff;
+  border-bottom: 2px solid var(--c-white);
 }
 
 /* row 1 items */
 
 .lisbon {
-  width: 50%;
-  background-color: #70b8db;
-  border-right: 2px solid #ffffff;
+  width: var(--w-half);
+  background-color: var(--с-lisbon);
+  border-right: 2px solid var(--c-white);
 }
 
 .paris {
-  width: 25%;
-  background-color: #33cccc;
-  border-right: 2px solid #ffffff;
+  width: var(--w-quoter);
+  background-color: var(--c-paris);
+  border-right: 2px solid var(--c-white);
 }
 
 .belgrade {
-  width: 25%;
-  background-color: #996699;
+  width: var(--w-quoter);
+  background-color: var(--c-belgrade);
 }
 
 /* row 2 items */
 
 .venice {
-  width: 25%;
-  background-color: #c24747;
-  border-right: 2px solid #ffffff;
+  width: var(--w-quoter);
+  background-color: var(--c-venice);
+  border-right: 2px solid var(--c-white);
 }
 
 .tel-aviv {
-  width: 25%;
-  background-color: #e2674a;
-  border-right: 2px solid #ffffff;
+  width: var(--w-quoter);
+  background-color: var(--c-tel-aviv);
+  border-right: 2px solid var(-c--white);
 }
 
 .cairo {
-  width: 25%;
-  background-color: #ffcc66;
-  border-right: 2px solid #ffffff;
+  width: var(--w-quoter);
+  background-color: var(--c-cairo);
+  border-right: 2px solid var(--c-white);
 }
 
 .new-york {
-  width: 25%;
-  background-color: #99cc99;
+  width: var(--w-quoter);
+  background-color: var(--c-new-york);
 }
 
 /* row 3 items */
 
 .new-delhi {
-  width: 25%;
-  background-color: #669999;
-  border-right: 2px solid #ffffff;
+  width: var(--w-quoter);
+  background-color: var(--c-new-delhi);
+  border-right: 2px solid var(--c-white);
 }
 
 .san-francisco {
-  width: 50%;
-  background-color: #cc6699;
-  border-right: 2px solid #ffffff;
+  width: var(--w-half);
+  background-color: var(--c-san-francisco);
+  border-right: 2px solid var(--c-white);
 }
 
 .tokyo {
-  width: 25%;
-  background-color: #339966;
+  width: var(--w-quoter);
+  background-color: var(--c-tokyo);
 }
 
 /* row 4 items */
 
 .sydney {
-  width: 100%;
-  background-color: #666699;
+  width: var(--w-ful);
+  background-color: var(--c-sydney);
 }
 
 /* greeting */

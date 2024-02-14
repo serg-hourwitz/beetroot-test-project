@@ -6,9 +6,9 @@
 }
 
 body {
-  font-family: "Lucida Sans Unicode";
-  font-size: 22px;
-  color: #ffffff;
+  font-family: var(--f-base);
+  font-size: var(--fs-base);
+  color: var(--c-white);
 }
 
 .wrapper {
