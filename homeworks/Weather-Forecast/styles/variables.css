@@ -21,13 +21,13 @@
   /* row 4 */
   --c-sydney: #666699;
   /* * Fonts */
-    --f-base: "Lucida Sans Unicode";
+  --f-base: "Lucida Sans Unicode";
   /* * Font sizes */
   --fs-base: 22px;
   /* * Transitions */
   --t-normal: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
-/* * Widths */
---w-quoter: 25%;
---w-half: 50%;
---w-ful: 100%;
+  /* * Widths */
+  --w-quoter: 25%;
+  --w-half: 50%;
+  --w-ful: 100%;
 }
