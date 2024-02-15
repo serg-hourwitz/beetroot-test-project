@@ -36,15 +36,15 @@
 }
 
 .nav-list-link {
-  font-family: "Montserrat";
+  font-family: var(--f-base);
   font-weight: 400;
-  color: #2f281e;
-  transition: all 0.5s ease-in-out;
+  color: var(--c-black);
+  transition: var(--t-normal);
   padding: 10px;
 }
 
 .nav-list-link:hover {
-  color: #ff9900;
+  color: var(--c-primary);
 }
 
 .nav-sign-wrapper {
@@ -55,33 +55,33 @@
 .header-btn {
   width: 110px;
   padding: 15px 0 15px;
-  font-family: "Montserrat";
+  font-family: var(--f-base);
   font-weight: 600;
   border-radius: 5px;
-  transition: all 0.5s ease-in-out;
+  transition: var(--t-normal);
 }
 
 .sign-in-btn {
-  border: 1px solid #bcd0e5;
-  color: #2f281e;
-  background: #ffffff;
+  border: 1px solid var(--c-lightsteelblue);
+  color: var(--c-black);
+  background: var(--c-white);
 }
 
 .sign-in-btn:hover {
-  box-shadow: inset 0 0 10px #bcd0e5;
+  box-shadow: inset 0 0 10px var(--c-lightsteelblue);
 }
 
 .sign-up-btn {
   border: 1px solid transparent;
-  color: #ffffff;
-  background: #ff9900;
+  color: var(--c-white);
+  background: var(--c-primary);
 }
 
 .sign-up-btn:hover {
-  border: 1px solid #ff9900;
-  background: #ffffff;
-  color: #ff9900;
-  box-shadow: inset 0 0 15px #ff9900;
+  border: 1px solid var(--c-primary);
+  background: var(--c-white);
+  color: var(--c-primary);
+  box-shadow: inset 0 0 15px var(--c-primary);
 }
 /* #endregion */
 /* #region main */
@@ -102,15 +102,15 @@
 }
 
 .main-title {
-  font-family: "Montserrat";
+  font-family: var(--f-base);
   font-size: 44px;
   line-height: 54px;
   margin-bottom: 30px;
-  color: #2f281e;
+  color: var(--с-black);
 }
 
 .top-section-description {
-  font-family: "Montserrat";
+  font-family: var(--f-base);
   font-weight: 400;
   font-size: 18px;
   line-height: 28px;
@@ -121,18 +121,18 @@
   width: 180px;
   border: 1px solid transparent;
   border-radius: 5px;
-  background: #ff9900;
+  background: var(--c-primary);
   padding: 15px 0 15px;
   font-family: "Poppins";
-  color: #ffffff;
+  color: var(--c-white);
   transition: all 0.5s ease-in-out;
 }
 
 .start-btn:hover {
-  border: 1px solid #ff9900;
-  color: #ff9900;
-  box-shadow: inset 0 0 15px #ff9900;
-  background: #ffffff;
+  border: 1px solid var(--c-primary);
+  color: var(--c-primary);
+  box-shadow: inset 0 0 15px var(--c-primary);
+  background: var(--c-white);
 }
 
 .top-section-img {
@@ -150,10 +150,10 @@
   display: block;
   max-width: 540px;
   margin: 0 auto;
-  font-family: "Montserrat";
+  font-family: var(--f-base);
   font-size: 36px;
   line-height: 44px;
-  color: #2f281e;
+  color: var(--с-black);
   text-align: center;
   margin-bottom: 50px;
 }
@@ -173,16 +173,16 @@
 }
 
 .about-tools-article-title {
-  font-family: "Montserrat";
+  font-family: var(--f-base);
   font-weight: 600;
   font-size: 22px;
   line-height: 1;
-  color: #2f281e;
+  color: var(--с-black);
   margin-bottom: 15px;
 }
 
 .about-tools-article-description {
-  font-family: "Montserrat";
+  font-family: var(--f-base);
   font-weight: 500;
   font-size: 16px;
   line-height: 26px;
@@ -194,18 +194,18 @@
   margin: 0 auto;
   border: 1px solid transparent;
   border-radius: 5px;
-  background: #ff9900;
+  background: var(--c-primary);
   padding: 15px 0 15px;
   font-family: "Poppins";
-  color: #ffffff;
+  color: var(--c-white);
   transition: all 1s ease-in-out;
 }
 
 .sign-up-now-btn:hover {
-  border: 1px solid #ff9900;
-  box-shadow: inset 0 0 15px #ff9900;
-  background: #ffffff;
-  color: #ff9900;
+  border: 1px solid var(--c-primary);
+  box-shadow: inset 0 0 15px var(--c-primary);
+  background: var(--c-white);
+  color: var(--c-primary);
 }
 /* #endregion */
 /* #region benefits section */
@@ -226,7 +226,7 @@
 .about-validator-text,
 .benefits-section-description,
 .benefits-section-item-text {
-  font-family: "Montserrat";
+  font-family: var(--f-base);
   font-weight: 500;
   line-height: 26px;
 }
@@ -238,9 +238,9 @@
 }
 
 .benefits-section-title {
-  font-family: "Montserrat";
+  font-family: var(--f-base);
   font-size: 36px;
-  color: #2f281e;
+  color: var(--с-black);
   margin-bottom: 20px;
 }
 
@@ -249,8 +249,8 @@
 }
 
 .benefits-section-item-title {
-  font-family: "Montserrat";
-  color: #2f281e;
+  font-family: var(--f-base);
+  color: var(--с-black);
   margin-bottom: 10px;
 }
 
@@ -288,15 +288,15 @@
 .easier-decision,
 .product-managers-section-description,
 .product-managers-section-item-text {
-  font-family: "Montserrat";
+  font-family: var(--f-base);
   font-weight: 500;
   line-height: 26px;
 }
 
 .product-managers-section-title {
-  font-family: "Montserrat";
+  font-family: var(--f-base);
   font-size: 36px;
-  color: #2f281e;
+  color: var(--с-black);
   margin-bottom: 20px;
 }
 
@@ -334,7 +334,7 @@
 .optimization,
 .marketer-section-description,
 .marketer-section-item-text {
-  font-family: "Montserrat";
+  font-family: var(--f-base);
   font-weight: 500;
   line-height: 26px;
 }
@@ -344,9 +344,9 @@
 }
 
 .marketer-section-title {
-  font-family: "Montserrat";
+  font-family: var(--f-base);
   font-size: 36px;
-  color: #2f281e;
+  color: var(--с-black);
   margin-bottom: 20px;
 }
 
@@ -357,8 +357,8 @@
 }
 
 .marketer-section-item-title {
-  font-family: "Montserrat";
-  color: #2f281e;
+  font-family: var(--f-base);
+  color: var(--с-black);
   margin-bottom: 10px;
 }
 
@@ -395,7 +395,7 @@
 
 .footer-links-title, .footer-staff-title {
   font-size: 20px;
-  color: #2F281E;
+  color: var(--с-black);
   margin-bottom: 30px;
 }
 
@@ -405,7 +405,7 @@
 
 .footer-links-link, .footer-staff-link {
   font-weight: 500;
-  color: #544837;
+  color: var(--с-gray);
 }
 
 .footer-contact-wrapper {
@@ -417,18 +417,18 @@
   font-weight: 700;
   font-size: 20px;
   line-height: 30px;
-  color: #2F281E;
+  color: var(--с-black);
   margin-bottom: 25px;
 }
 
 .input {
   width: 100%;
-  border: 1px solid #BCD0E5;
+  border: 1px solid var(--с--lightsteelblue);
   border-radius: 5px;
   padding: 15px 0 15px 10px;
   margin-bottom: 25px;
   font-weight: 600;
-  color: #BCD0E5;
+  color: var(--с--lightsteelblue);
 }
 
 .input:focus {
@@ -437,7 +437,7 @@
 
 .input::placeholder {
   font-weight: 400;
-  color: #BCD0E5;
+  color: var(--с--lightsteelblue);
 }
 
 .footer-btn {
