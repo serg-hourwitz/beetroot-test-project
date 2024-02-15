@@ -1,0 +1,15 @@
+:root {
+  /* *Colors */
+  --c-white: #fff;
+  --c-black: #2f281e;
+  --c-gray: #544837;
+  --c-primary: #ff9900;
+  --c-lightsteelblue: #bcd0e5;
+  /* * Fonts */
+  --f-base: 'Montserrat', sans-serif;
+  --f-poppins: 'Poppins', sans-serif;
+  /* * Font sizes */
+  --fs-base: 16px;
+  /* * Transitions */
+  --t-normal: all 1s ease-in-out;
+}
