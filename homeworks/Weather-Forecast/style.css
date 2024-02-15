@@ -36,7 +36,7 @@
   border: none;
   border-radius: 30px;
   box-shadow: inset 0 0 15px;
-  opacity: .8;
+  opacity: 1;
 }
 
 .city-name,
@@ -62,7 +62,7 @@
 
 .skyblue-block {
   width: var(--w-half);
-  background-color: var(--с-skyblue);
+  background-color: var(--с-sky-blue);
   border-right: 2px solid var(--c-white);
 }
 
@@ -74,14 +74,14 @@
 
 .mediumorchid-block {
   width: var(--w-quoter);
-  background-color: var(--c-mediumorchid);
+  background-color: var(--c-medium-orchid);
 }
 
 /* row 2 items */
 
 .indianred-block {
   width: var(--w-quoter);
-  background-color: var(--c-indianred);
+  background-color: var(--c-indian-red);
   border-right: 2px solid var(--c-white);
 }
 
@@ -99,33 +99,33 @@
 
 .darkseagreen-block {
   width: var(--w-quoter);
-  background-color: var(--c-darkseagreen);
+  background-color: var(--c-dark-sea-green);
 }
 
 /* row 3 items */
 
 .cadetblue-block {
   width: var(--w-quoter);
-  background-color: var(--c-cadetblue);
+  background-color: var(--c-cadet-blue);
   border-right: 2px solid var(--c-white);
 }
 
 .palevioletred-block {
   width: var(--w-half);
-  background-color: var(--c-palevioletred);
+  background-color: var(--c-pale-violet-red);
   border-right: 2px solid var(--c-white);
 }
 
 .mediumseagreen-block {
   width: var(--w-quoter);
-  background-color: var(--c-mediumseagreen);
+  background-color: var(--c-medium-sea-green);
 }
 
 /* row 4 items */
 
 .slateblue-block {
   width: var(--w-ful);
-  background-color: var(--c-slateblue);
+  background-color: var(--c-slate-blue);
 }
 
 /* greeting */
