@@ -60,72 +60,72 @@
 
 /* row 1 items */
 
-.lisbon {
+.skyblue-block {
   width: var(--w-half);
-  background-color: var(--с-lisbon);
+  background-color: var(--с-skyblue);
   border-right: 2px solid var(--c-white);
 }
 
-.paris {
+.turquoise-block {
   width: var(--w-quoter);
-  background-color: var(--c-paris);
+  background-color: var(--c-turquoise);
   border-right: 2px solid var(--c-white);
 }
 
-.belgrade {
+.mediumorchid-block {
   width: var(--w-quoter);
-  background-color: var(--c-belgrade);
+  background-color: var(--c-mediumorchid);
 }
 
 /* row 2 items */
 
-.venice {
+.indianred-block {
   width: var(--w-quoter);
-  background-color: var(--c-venice);
+  background-color: var(--c-indianred);
   border-right: 2px solid var(--c-white);
 }
 
-.tel-aviv {
+.tomato-block {
   width: var(--w-quoter);
-  background-color: var(--c-tel-aviv);
+  background-color: var(--c-tomato);
   border-right: 2px solid var(--c-white);
 }
 
-.cairo {
+.khaki-block {
   width: var(--w-quoter);
-  background-color: var(--c-cairo);
+  background-color: var(--c-khaki);
   border-right: 2px solid var(--c-white);
 }
 
-.new-york {
+.darkseagreen-block {
   width: var(--w-quoter);
-  background-color: var(--c-new-york);
+  background-color: var(--c-darkseagreen);
 }
 
 /* row 3 items */
 
-.new-delhi {
+.cadetblue-block {
   width: var(--w-quoter);
-  background-color: var(--c-new-delhi);
+  background-color: var(--c-cadetblue);
   border-right: 2px solid var(--c-white);
 }
 
-.san-francisco {
+.palevioletred-block {
   width: var(--w-half);
-  background-color: var(--c-san-francisco);
+  background-color: var(--c-palevioletred);
   border-right: 2px solid var(--c-white);
 }
 
-.tokyo {
+.mediumseagreen-block {
   width: var(--w-quoter);
-  background-color: var(--c-tokyo);
+  background-color: var(--c-mediumseagreen);
 }
 
 /* row 4 items */
 
-.sydney {
+.slateblue-block {
   width: var(--w-ful);
-  background-color: var(--c-sydney);
+  background-color: var(--c-slateblue);
 }
 
 /* greeting */

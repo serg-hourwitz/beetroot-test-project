@@ -6,20 +6,20 @@
   /* border */
   --c-white: #ffffff;
   /* row 1 */
-  --с-lisbon: #70b8db;
-  --c-paris: #33cccc;
-  --c-belgrade: #996699;
+  --с-skyblue: #70b8db;
+  --c-turquoise: #33cccc;
+  --c-mediumorchid: #996699;
   /* row 2 */
-  --c-venice: #c24747;
-  --c-tel-aviv: #e2674a;
-  --c-cairo: #ffcc66;
-  --c-new-york: #99cc99;
+  --c-indianred: #c24747;
+  --c-tomato: #e2674a;
+  --c-khaki: #ffcc66;
+  --c-darkseagreen: #99cc99;
   /* row 3 */
-  --c-new-delhi: #669999;
-  --c-san-francisco: #cc6699;
-  --c-tokyo: #339966;
+  --c-cadetblue: #669999;
+  --c-palevioletred: #cc6699;
+  --c-mediumseagreen: #339966;
   /* row 4 */
-  --c-sydney: #666699;
+  --c-slateblue: #666699;
   /* * Fonts */
   --f-base: "Lucida Sans Unicode";
   /* * Font sizes */
