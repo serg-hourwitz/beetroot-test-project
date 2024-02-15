@@ -6,6 +6,11 @@
   padding: 0;
 }
 
+*::selection {
+  background-color: var(--c-primary);
+  color: var(--c-white);
+}
+
 body {
   background: var(--c-white);
   color: var(--c-gray);
