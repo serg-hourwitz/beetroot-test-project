@@ -51,7 +51,7 @@
 
 .main-portrait-wrapper {
   width: 50%;
-  border-right: 1px solid gold;
+  border-right: 1px solid var(--c-gold);
   padding-top: 100px;
   padding-bottom: 65px;
 }
@@ -202,12 +202,24 @@
   margin: 0 auto;
   border: 1px solid var(--c-gold);
   cursor: pointer;
+  transition: all .8s ease-in-out;
+}
+
+.button:hover {
+  border: 1px solid var(--c-grey);
+  box-shadow: 0 0 10px var(--c-grey);
+}
+
+.button:hover .button-name {
+  color: var(--c-gold);
 }
 
 .button-name {
   font-family: var(--f-grey);
   font-weight: 700;
   font-size: 14px;
+  color: var(--c-dim-grey);
   margin: 5px 10px;
   text-transform: uppercase;
+  transition: all .8s ease-in-out;
 }
