@@ -49,6 +49,13 @@
   align-items: center;
 }
 
+.main-portrait-wrapper {
+  width: 50%;
+  border-right: 1px solid gold;
+  padding-top: 100px;
+  padding-bottom: 65px;
+}
+
 /* Portrait */
 
 .main-portrait {
@@ -115,6 +122,11 @@
 }
 
 /* Main text */
+
+.main-text-wrapper {
+  margin-top: 100px;
+  padding-bottom: 65px;
+}
 
 .main-text {
   display: flex;
