@@ -81,10 +81,13 @@
   margin-bottom: 30px;
 }
 
+.main-icons-block {
+  margin-bottom: 50px;
+}
+
 .main-icons-list {
   display: flex;
   gap: 5px;
-  margin-bottom: 50px;
 }
 
 .section-text-description {
@@ -127,5 +130,6 @@
   font-family: var(--f-grey);
   font-weight: 700;
   font-size: 14px;
+  margin: 5px 10px;
   text-transform: uppercase;
 }
