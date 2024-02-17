@@ -1,0 +1,19 @@
+.circle-center {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-color: var(--c-light-grey);
+  border: 12px solid var(--c-violet);
+
+  &-inner {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: var(--c-violet-dark);
+    border: 12px solid var(--c-violet);
+  }
+}

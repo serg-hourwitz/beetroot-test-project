@@ -1,0 +1,45 @@
+.circle-radial {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: #480E63;
+  border: 12px solid #FFF;
+  border-radius: 50%;
+}
+
+.circle-radial--top {
+  top: 0;
+  left: calc(50% - 50px);
+}
+
+.circle-radial--top-right {
+  top: calc(20% - 50px);
+  right: calc(20% - 50px);
+}
+
+.circle-radial--right {
+  left: calc(100% - 100px);
+}
+
+.circle-radial--bottom-right {
+  bottom: calc(20% - 50px);
+  right: calc(20% - 50px);
+}
+
+.circle-radial--bottom {
+  bottom: 0;
+}
+
+.circle-radial--bottom-left {
+  bottom: calc(20% - 50px);
+  left: calc(20% - 50px);
+}
+
+.circle-radial--left {
+  right: calc(100% - 100px);
+}
+
+.circle-radial--top-left {
+  top: calc(20% - 50px);
+  left: calc(20% - 50px);
+}
