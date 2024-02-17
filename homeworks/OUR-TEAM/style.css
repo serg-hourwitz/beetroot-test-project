@@ -1,0 +1,131 @@
+/* Header */
+.header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.header-title-wrapper {
+  max-width: 450px;
+  margin: 0 auto;
+}
+
+.header-subtitle {
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: var(--c-grey);
+  margin-bottom: 15px;
+}
+
+.header-main-title {
+  font-family: var(--f-gold);
+  font-size: 60px;
+  text-transform: uppercase;
+  color: var(--c-gold);
+  margin-bottom: 40px;
+}
+
+.header-title-divider-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.divider-line {
+  width: 210px;
+  height: 1px;
+  background-color: var(--c-gold);
+}
+
+/* Main */
+.main-wrapper {
+  max-width: 1030px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-portrait,
+.main-text {
+  max-width: 430px;
+}
+.main-icon-image {
+  width: 30px;
+  height: 30px;
+}
+
+.main-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-text-title {
+  font-family: var(--f-gold);
+  font-size: 36px;
+  color: var(--c-dim-grey);
+  margin-bottom: 30px;
+}
+
+.main-text-title-divisor {
+  width: 100px;
+  height: 1px;
+  background-color: var(--c-gold);
+  margin-bottom: 30px;
+}
+
+.main-text-subtile {
+  font-size: 24px;
+  color: var(--c-dim-grey);
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.main-icons-list {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 50px;
+}
+
+.section-text-description {
+  margin-bottom: 20px;
+}
+
+.section-text-description-paragraph {
+  text-align: center;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.section-text-triple-divisor {
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.triple-divisor-element-edge {
+  width: 10px;
+  height: 4px;
+  background-color: var(--c-gold);
+}
+
+.triple-divisor-element-center {
+  width: 20px;
+  height: 4px;
+  background-color: var(--c-gold);
+}
+
+.button {
+  display: block;
+  margin: 0 auto;
+  border: 1px solid var(--c-gold);
+}
+
+.button-name {
+  font-family: var(--f-grey);
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+}

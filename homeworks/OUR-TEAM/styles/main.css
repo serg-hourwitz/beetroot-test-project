@@ -1,0 +1,43 @@
+/* *Global */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 1px solid lightblue;
+}
+
+body {
+  font-family: var(--f-base);
+  font-size: var(--fs-base);
+  color: var(--c-dark-slate-grey);
+}
+
+.wrapper {
+  max-width: 1200px;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+img {
+  width: 100%;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
