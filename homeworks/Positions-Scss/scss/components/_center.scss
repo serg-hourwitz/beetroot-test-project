@@ -8,6 +8,7 @@
   border-radius: 50%;
   background-color: var(--c-light-grey);
   border: 12px solid var(--c-violet);
+  cursor: pointer;
 
   &-inner {
     width: 200px;
@@ -15,5 +16,9 @@
     border-radius: 50%;
     background-color: var(--c-violet-dark);
     border: 12px solid var(--c-violet);
+  }
+
+  &:active {
+    border-radius: 25%;
   }
 }
