@@ -1,0 +1,15 @@
+.header {
+  text-align: center;
+  margin-bottom: 40px;
+
+  &-title-wrapper {
+    max-width: 450px;
+    margin: 0 auto;
+  }
+
+  &-title-divider-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}

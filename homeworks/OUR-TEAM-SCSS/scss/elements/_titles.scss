@@ -1,0 +1,31 @@
+.header-subtitle {
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: var(--c-grey);
+  margin-bottom: 15px;
+}
+
+.header-main-title {
+  font-family: var(--f-gold);
+  font-size: 60px;
+  text-transform: uppercase;
+  color: var(--c-gold);
+  margin-bottom: 40px;
+}
+
+.main-text-title {
+  font-family: var(--f-gold);
+  font-size: 36px;
+  line-height: 1;
+  color: var(--c-dim-grey);
+  margin-bottom: 30px;
+}
+
+.main-text-subtile {
+  font-size: 24px;
+  line-height: 1;
+  color: var(--c-dim-grey);
+  font-weight: 400;
+  margin-bottom: 30px;
+}

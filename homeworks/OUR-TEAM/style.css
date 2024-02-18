@@ -116,11 +116,6 @@
   padding: 15px;
 }
 
-.main-icon-image {
-  width: 30px;
-  height: 30px;
-}
-
 /* Main text */
 
 .main-text-wrapper {
@@ -167,6 +162,11 @@
   gap: 5px;
 }
 
+.main-icon-image {
+  width: 30px;
+  height: 30px;
+}
+
 .section-text-description {
   margin-bottom: 20px;
 }
@@ -196,6 +196,8 @@
   height: 4px;
   background-color: var(--c-gold);
 }
+
+/* Button */
 
 .button {
   display: block;

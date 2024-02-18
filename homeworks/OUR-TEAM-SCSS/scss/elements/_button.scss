@@ -1,0 +1,20 @@
+.button {
+  display: block;
+  margin: 0 auto;
+  border: 1px solid var(--c-gold);
+  font-family: var(--f-grey);
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--c-dim-grey);
+  padding: 5px 10px;
+  text-transform: uppercase;
+  transition: all .8s ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+    border: 1px solid var(--c-grey);
+    box-shadow: 0 0 10px var(--c-grey);
+    color: var(--c-gold);
+    border-radius: 4px;
+  }
+}

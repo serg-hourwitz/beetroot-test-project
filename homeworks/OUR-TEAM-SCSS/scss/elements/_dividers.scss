@@ -1,0 +1,32 @@
+.divider-line {
+  width: 210px;
+  height: 1px;
+  background-color: var(--c-gold);
+}
+
+.main-text-title-divisor {
+  width: 100px;
+  height: 1px;
+  background-color: var(--c-gold);
+  margin-bottom: 30px;
+}
+
+.section-text-triple-divisor {
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 25px;
+
+  .triple-divisor-element-edge {
+    width: 10px;
+    height: 4px;
+    background-color: var(--c-gold);
+  }
+
+  .triple-divisor-element-center {
+    width: 20px;
+    height: 4px;
+    background-color: var(--c-gold);
+  }
+}

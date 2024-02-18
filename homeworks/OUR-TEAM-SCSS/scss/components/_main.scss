@@ -1,0 +1,17 @@
+.main-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.main-section-wrapper {
+  max-width: 1030px;
+  display: flex;
+  align-items: center;
+}
+
+.main-portrait-wrapper {
+  width: 50%;
+  border-right: 1px solid var(--c-gold);
+  padding-top: 100px;
+  padding-bottom: 65px;
+}

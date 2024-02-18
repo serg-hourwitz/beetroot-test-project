@@ -1,0 +1,59 @@
+/* Portrait */
+
+.main-portrait {
+  margin-right: 85px;
+}
+
+/* Frame */
+
+.main-portrait-frame-wrapper {
+  position: relative;
+  display: flex;
+}
+
+.main-portrait-frame-block {
+  position: relative;
+}
+
+.main-portrait-frame-block {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border: 1px solid var(--c-gold);
+}
+
+.main-portrait-frame-block--top-right {
+  top: 0;
+  left: 77%;
+  border-left: none;
+  border-bottom: none;
+}
+
+.main-portrait-frame-block--bottom-right {
+  bottom: 0;
+  left: 77%;
+  border-left: none;
+  border-top: none;
+}
+
+.main-portrait-frame-block--bottom-left {
+  bottom: 0;
+  border-top: none;
+  border-right: none;
+}
+
+.main-portrait-frame-block--top-left {
+  top: 0;
+  left: 0;
+  border-right: none;
+  border-bottom: none;
+}
+
+.main-portrait,
+.main-text {
+  max-width: 430px;
+}
+
+.main-photo {
+  padding: 15px;
+}
