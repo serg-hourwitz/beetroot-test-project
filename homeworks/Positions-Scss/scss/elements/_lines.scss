@@ -3,6 +3,7 @@
   width: calc(100% - 100px);
   height: 3px;
   background-color: var(--c-light-grey);
+  transition: all .8s ease-in-out;
 
   &--45 {
     transform: rotate(45deg);
@@ -15,5 +16,9 @@
   &--135 {
     transform: rotate(135deg);
   }
-}
 
+  &:active {
+    transform: rotate(45deg);
+    cursor: pointer;
+  }
+}
