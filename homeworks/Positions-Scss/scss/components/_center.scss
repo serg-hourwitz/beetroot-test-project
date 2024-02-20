@@ -6,7 +6,6 @@
   background-color: var(--c-violet-dark);
   border: 12px solid var(--c-violet);
   cursor: pointer;
-  transition: transform .8s ease-in-out;
 
   &-center {
     position: absolute;
@@ -22,9 +21,15 @@
   }
 
   &:active {
-    & + .radial-block {
+    &+.radial-block {
       transform: scale(.8);
     }
   }
+
+  // &:hover {
+  //   &+.radial-block {
+  //     transform: rotate(360deg);
+  //   }
+  // }
 
 }
