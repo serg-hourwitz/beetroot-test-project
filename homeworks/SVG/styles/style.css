@@ -3,7 +3,7 @@
 .header {
   padding-top: 20px;
   padding-bottom: 20px;
-  border: 1px solid var(--c-dark-grey);
+  border-bottom: 1px solid var(--c-dark-grey);
 }
 
 .header-logo-wrapper {
