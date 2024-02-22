@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #FFFFFF;
+  /* color: #16133D; */
+  /* font-size: 16px; */
+  /* font-weight: 400; */
+}
+
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+.icon-klipartzcom {
+  color: var(--c-green);
+  font-size: 30px;
+}
+
+h1, h2, h3 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  display: flex;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+
+.wrapper {
+  max-width: 1470px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}

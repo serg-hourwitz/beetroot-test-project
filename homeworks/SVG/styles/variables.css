@@ -1,0 +1,15 @@
+:root {
+  /* * Colors */
+  --c-white: #FFFFFF;
+  --c-dark-violet: #16133D;
+  --c-light-grey: #7690A8;
+  --c-green: #3DB370;
+  --c-dark-grey: #E5EAF4;
+  --c-extra-dark-grey: #EFEEF3;
+  --c-black: #0D0D0D;
+
+  /* * Fonts */
+  --f-main: "Roboto";
+  --f-logo: "Quicksand";
+  --f-title: "Nunito Sans";
+}
