@@ -26,10 +26,10 @@
     }
   }
 
-  // &:hover {
-  //   &+.radial-block {
-  //     transform: rotate(360deg);
-  //   }
-  // }
+  &:hover {
+    &+.radial-block {
+      transform: rotate(360deg);
+    }
+  }
 
 }
