@@ -1,0 +1,13 @@
+:root {
+  /* * Fonts */
+  --f-primary: "Roboto";
+  --f-secondary: "Delius Unicase";
+  --fs-primary: 14px;
+  --fs-secondary: 36px;
+  --fw-primary: 400;
+  --fw-secondary: 500;
+  /* * Colors */
+  --c-black: #000000;
+  --c-white: #FFFFFF;
+  --c-grey: #E0E0E0;
+}
