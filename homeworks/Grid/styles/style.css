@@ -63,6 +63,10 @@
 
 /* * Section bottom  */
 
+.section-bottom {
+  margin-bottom: 120px;
+}
+
 .section-bottom-container {
   grid-template-columns: repeat(3, calc((100% - 60px)) / 3);
   grid-template-rows: repeat(5, calc((100% - 120px)) / 5);
