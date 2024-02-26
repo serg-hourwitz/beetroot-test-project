@@ -24,22 +24,15 @@ img {
   object-fit: cover;
 }
 
-h1, h2 {
+h1,
+h2 {
   margin: 0;
   padding: 0;
 }
 
-.section {
-  margin-top: 120px;
-}
-
-.container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
-}
-
-.grid-element-top,.grid-element-middle, .grid-element-bottom {
+.grid-element-top,
+.grid-element-middle,
+.grid-element-bottom {
   border-radius: 8px;
   overflow: hidden;
 }
@@ -52,15 +45,6 @@ h1, h2 {
   margin-bottom: 80px;
 }
 
-.image-info-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin-top: -37px;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
 .name {
   font-weight: var(--fw-secondary);
   color: var(--c-white);
@@ -69,4 +53,3 @@ h1, h2 {
 .date {
   color: var(--c-grey);
 }
-
