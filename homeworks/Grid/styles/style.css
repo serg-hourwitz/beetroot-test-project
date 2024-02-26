@@ -1,7 +1,7 @@
 /* * Section top */
 .section-top-container {
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  /* grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr); */
 }
 
 .top--1-1 {
