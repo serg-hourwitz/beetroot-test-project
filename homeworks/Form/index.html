@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link
+      rel="shortcut icon"
+      href="../../favicon/favicon.ico"
+      type="image/x icon"
+    />
+    <!-- * Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- * Styles -->
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <div class="homepage">
+      <a href="../../index.html" class="homepage-link">HOME</a>
+    </div>
+    <div class="app">
+      <!-- * Main -->
+      <main class="main">
+        <div class="wrapper main-wrapper">
+          <div class="container forms-container">
+            <div class="left-form-block block">
+              <!-- form -->
+              <form method="post" class="form">
+                <h1 class="form-title">Create an Account</h1>
+                <!-- top -->
+                <div class="personal-data">
+                  <!-- first name -->
+                  <label for="fname" class="fname-label">
+                    <span class="input-name">First Name</span>
+                    <input
+                      type="text"
+                      name="fname"
+                      id="fname"
+                      class="input-field"
+                      required
+                    />
+                  </label>
+                  <!-- second name -->
+                  <label for="sname" class="sname-label">
+                    <span class="input-name">Last Name</span>
+                    <input
+                      type="text"
+                      name="sname"
+                      id="sname"
+                      class="input-field"
+                    />
+                  </label>
+                  <!-- email -->
+                  <label for="email" class="email-label">
+                    <span class="input-name">E-mail</span>
+                    <input
+                      type="email"
+                      name="email"
+                      id="email"
+                      class="input-field"
+                      required
+                    />
+                  </label>
+                  <span class="text"
+                    >We'll never share your email with anyone else.</span
+                  >
+                </div>
+                <!-- sex -->
+                <div class="sex-choice">
+                  <label for="male" class="sex-label">
+                    <input
+                      type="radio"
+                      name="sex"
+                      id="male"
+                      class="sex"
+                      checked
+                    />
+                    <span class="input-name input-sex">Male</span>
+                  </label>
+                  <label for="female" class="sex-label">
+                    <input type="radio" name="sex" id="female" class="sex" />
+                    <span class="input-name input-sex">Female</span>
+                  </label>
+                </div>
+                <!-- location -->
+                <div class="location">
+                  <!-- country -->
+                  <label for="country" class="label">
+                    <span class="input-name">Country</span>
+                    <select name="country" id="country" required>
+                      <option value="ukraine">Ukraine</option>
+                      <option value="another">Another</option>
+                    </select>
+                  </label>
+                  <!-- city -->
+                  <label for="city" class="label">
+                    <span class="input-name">City</span>
+                    <input
+                      type="text"
+                      name="city"
+                      id="city"
+                      class="city"
+                      required
+                    />
+                  </label>
+                  <!-- button -->
+                  <button class="sign-up-btn btn" type="submit">Sign Up</button>
+                  <span class="button-text"
+                    >By clicking the 'Sign Up' button, you confirm that you
+                    <span><a href="#" class="text-link">Terms of Use</a></span>
+                    accept our and
+                    <span><a href="#" class="text-link">Privacy Policy</a></span
+                    >.</span
+                  >
+                </div>
+              </form>
+              <!-- * Footer -->
+              <div class="form-left-footer">
+                <span class="form-left-footer-text">Have an account?</span>
+                <a href="#" class="form-left-footer-link">Log In</a>
+              </div>
+            </div>
+            <div class="right-form-block"></div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
