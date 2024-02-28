@@ -29,14 +29,14 @@
         <div class="wrapper main-wrapper">
           <div class="container forms-container">
             <div class="left-form-block block">
-              <!-- form -->
-              <form method="post" class="form">
-                <h1 class="form-title">Create an Account</h1>
+              <!-- form left -->
+              <h1 class="form-title">Create an Account</h1>
+              <form method="get" class="form form-left">
                 <!-- top -->
                 <div class="personal-data">
                   <!-- first name -->
-                  <label for="fname" class="fname-label">
-                    <span class="input-name">First Name</span>
+                  <label class="fname-label">
+                    <div class="input-name">First Name</div>
                     <input
                       type="text"
                       name="fname"
@@ -44,20 +44,23 @@
                       class="input-field"
                       required
                     />
+                    <div class="error"></div>
                   </label>
-                  <!-- second name -->
-                  <label for="sname" class="sname-label">
-                    <span class="input-name">Last Name</span>
+                  <!-- last name -->
+                  <label class="lname-label">
+                    <div class="input-name">Last Name</div>
                     <input
                       type="text"
-                      name="sname"
-                      id="sname"
+                      name="lname"
+                      id="lname"
                       class="input-field"
+                      required
                     />
+                    <div class="error"></div>
                   </label>
                   <!-- email -->
-                  <label for="email" class="email-label">
-                    <span class="input-name">E-mail</span>
+                  <label class="email-label">
+                    <div class="input-name">E-mail</div>
                     <input
                       type="email"
                       name="email"
@@ -65,6 +68,7 @@
                       class="input-field"
                       required
                     />
+                    <div class="error"></div>
                   </label>
                   <span class="text"
                     >We'll never share your email with anyone else.</span
@@ -72,51 +76,66 @@
                 </div>
                 <!-- sex -->
                 <div class="sex-choice">
-                  <label for="male" class="sex-label">
+                  <label class="sex-label">
                     <input
                       type="radio"
                       name="sex"
                       id="male"
-                      class="sex"
-                      checked
+                      value="male"
+                      required
                     />
-                    <span class="input-name input-sex">Male</span>
+                    <div class="radio-button">
+                      <img src="./scss/assets/radio-button.svg" alt="radio">
+                    </div>
+                    <div class="input-name input-sex">Male</div>
                   </label>
-                  <label for="female" class="sex-label">
-                    <input type="radio" name="sex" id="female" class="sex" />
-                    <span class="input-name input-sex">Female</span>
+                  <label class="sex-label">
+                    <input type="radio" name="sex" id="female" value="female" />
+                    <div class="input-name input-sex">Female</div>
                   </label>
                 </div>
                 <!-- location -->
                 <div class="location">
                   <!-- country -->
-                  <label for="country" class="label">
-                    <span class="input-name">Country</span>
-                    <select name="country" id="country" required>
-                      <option value="ukraine">Ukraine</option>
-                      <option value="another">Another</option>
+                  <label class="label">
+                    <div class="input-name">Country</div>
+                    <div class="select-arrow-icon-wrapper">
+                      <img
+                        class=".select-arrow-icon"
+                        src="./scss/assets/arrows.svg"
+                        alt="arrow"
+                      />
+                    </div>
+                    <select name="country" id="country" class="select">
+                      <option value="Select" selected>Select</option>
+                      <option value="Ukraine">Ukraine</option>
+                      <option value="Another" disabled>Another</option>
                     </select>
+                    <div class="error"></div>
                   </label>
                   <!-- city -->
-                  <label for="city" class="label">
-                    <span class="input-name">City</span>
+                  <label class="label">
+                    <div class="input-name">City</div>
                     <input
                       type="text"
                       name="city"
                       id="city"
-                      class="city"
+                      class="input-field"
                       required
                     />
+                    <div class="error"></div>
                   </label>
                   <!-- button -->
-                  <button class="sign-up-btn btn" type="submit">Sign Up</button>
-                  <span class="button-text"
-                    >By clicking the 'Sign Up' button, you confirm that you
+                  <button class="sign-up-btn btn" type="submit">
+                    <span>Sign Up</span>
+                  </button>
+                  <div class="sign-up-button-text">
+                    By clicking the 'Sign Up' button, you confirm that you
                     <span><a href="#" class="text-link">Terms of Use</a></span>
                     accept our and
                     <span><a href="#" class="text-link">Privacy Policy</a></span
-                    >.</span
-                  >
+                    >.
+                  </div>
                 </div>
               </form>
               <!-- * Footer -->
@@ -125,7 +144,123 @@
                 <a href="#" class="form-left-footer-link">Log In</a>
               </div>
             </div>
-            <div class="right-form-block"></div>
+            <!-- * form right -->
+            <div class="right-form-block block">
+              <h1 class="form-title">Profile</h1>
+              <form method="get" class="form form-right">
+                <!-- input file -->
+                <div class="form-right-file">
+                  <div class="photo-frame">
+                    <img src="./scss/assets/photo.png" alt="photo" />
+                  </div>
+                  <div class="label-wrapper">
+                    <label class="label label-file">
+                      <div class="select-file-container">
+                        <div class="select-file">_______________</div>
+                        <img
+                          class="select-file-img"
+                          src="./scss/assets/photo-camera.svg"
+                          alt="photo-camera"
+                        />
+                        <input type="file" class="input-file" />
+                      </div>
+                      <button class="button-reset" type="reset">
+                        <span
+                          ><img
+                            class="button-reset-img"
+                            src="./scss/assets/trash.svg"
+                            alt="trash"
+                        /></span>
+                      </button>
+                    </label>
+                    <div class="input-file-text">Up to 1 MB (300x300 px)</div>
+                  </div>
+                </div>
+                <div class="right-form-main-wrapper">
+                  <!-- name -->
+                  <label class="name-label">
+                    <div class="input-name">Name</div>
+                    <input
+                      type="text"
+                      name="name"
+                      id="name"
+                      class="input-field"
+                      required
+                    />
+                    <div class="error"></div>
+                  </label>
+                  <!-- email -->
+                  <label class="email-label-right">
+                    <div class="input-name">E-mail</div>
+                    <input
+                      type="email"
+                      name="email"
+                      id="email-r"
+                      class="input-field"
+                      required
+                    />
+                    <div class="error"></div>
+                  </label>
+                  <!-- country -->
+                  <label class="label">
+                    <div class="input-name">Country</div>
+                    <div class="select-arrow-icon-wrapper">
+                      <img
+                        class="select-arrow-icon"
+                        src="./scss/assets/arrows.svg"
+                        alt="arrow"
+                      />
+                    </div>
+                    <select name="country" id="country-right" class="select">
+                      <option value="Select" selected>Select</option>
+                      <option value="Ukraine">Ukraine</option>
+                      <option value="Another" disabled>Another</option>
+                    </select>
+                    <div class="error"></div>
+                  </label>
+                  <!-- city -->
+                  <label class="label">
+                    <div class="input-name">City</div>
+                    <input
+                      type="text"
+                      name="city"
+                      id="city-right"
+                      class="input-field"
+                      required
+                    />
+                    <div class="error"></div>
+                  </label>
+                  <!-- ZIP code -->
+                  <label class="label">
+                    <div class="input-name">Zip Code</div>
+                    <input
+                      type="number"
+                      name="zip"
+                      id="zip"
+                      class="input-field"
+                      required
+                    />
+                    <div class="error"></div>
+                  </label>
+                  <!-- Phone Number -->
+                  <label class="label">
+                    <div class="input-name">Phone Number</div>
+                    <input
+                      type="number"
+                      name="phone"
+                      id="phone"
+                      class="input-field"
+                      required
+                    />
+                    <div class="error"></div>
+                  </label>
+                  <!-- button update -->
+                  <button class="button-update btn">
+                    <span>Update</span>
+                  </button>
+                </div>
+              </form>
+            </div>
           </div>
         </div>
       </main>
