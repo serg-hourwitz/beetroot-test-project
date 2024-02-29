@@ -50,6 +50,11 @@ input {
   width: 100%;
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
 .input-field {
   height: 38px;
   padding-left: 10px;
@@ -78,9 +83,10 @@ input {
   outline: none;
   padding-left: 10px;
   color: var(--c-grey-dark);
+  -webkit-appearance: none;
+  -moz-appearance: none;
   appearance: none;
 }
-
 
 .error {
   height: 13px;
