@@ -110,7 +110,7 @@
                         alt="arrow"
                       />
                     </div>
-                    <select name="country" id="country" class="select">
+                    <select name="country" id="country" class="select" required>
                       <option value="Select" selected>Select</option>
                       <option value="Ukraine">Ukraine</option>
                       <option value="Another" disabled>Another</option>
@@ -169,18 +169,19 @@
                         <input type="file" class="input-file" />
                       </div>
                       <button class="button-reset" type="reset">
-                        <span> <svg
-                          class="button-reset-img"
-                          viewBox="0 0 10 12"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            fill-rule="evenodd"
-                            clip-rule="evenodd"
-                            d="M1.00001 10.6667C1.00001 11.4 1.60001 12 2.33334 12H7.66668C8.40001 12 9.00001 11.4 9.00001 10.6667V2.66667H1.00001V10.6667ZM9.66668 0.666667H7.33334L6.66668 0H3.33334L2.66668 0.666667H0.333344V2H9.66668V0.666667Z"
-                          />
-                        </svg></span>
+                        <span>
+                          <svg
+                            class="button-reset-img"
+                            viewBox="0 0 10 12"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M1.00001 10.6667C1.00001 11.4 1.60001 12 2.33334 12H7.66668C8.40001 12 9.00001 11.4 9.00001 10.6667V2.66667H1.00001V10.6667ZM9.66668 0.666667H7.33334L6.66668 0H3.33334L2.66668 0.666667H0.333344V2H9.66668V0.666667Z"
+                            /></svg
+                        ></span>
                       </button>
                     </label>
                     <div class="input-file-text">Up to 1 MB (300x300 px)</div>
@@ -221,7 +222,12 @@
                         alt="arrow"
                       />
                     </div>
-                    <select name="country" id="country-right" class="select">
+                    <select
+                      name="country"
+                      id="country-right"
+                      class="select"
+                      required
+                    >
                       <option value="Select" selected>Select</option>
                       <option value="Ukraine">Ukraine</option>
                       <option value="Another" disabled>Another</option>
@@ -265,7 +271,7 @@
                     <div class="error"></div>
                   </label>
                   <!-- button update -->
-                  <button class="button-update btn">
+                  <button class="button-update btn" type="submit">
                     <span>Update</span>
                   </button>
                 </div>
