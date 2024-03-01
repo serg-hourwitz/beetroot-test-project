@@ -3,7 +3,6 @@
 .main-title {
   display: block;
   max-width: 770px;
-  margin-top: 100px;
   font-size: var(--fs-big);
   font-weight: var(--fw-bold);
   line-height: 64px;
@@ -64,3 +63,14 @@
 .article-text-link {
   padding-left: 13px;
 }
+
+.icon-arrow {
+  fill:var(--c-light-grey);
+  transition: all .3s ease-in-out;
+
+  &:hover {
+    fill: red;
+    transform: scale(1.5) translateY(-2px);
+  }
+}
+
