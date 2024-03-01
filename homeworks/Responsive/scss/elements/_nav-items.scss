@@ -1,3 +1,7 @@
+.navigation-logo-link {
+  display: flex;
+}
+
 .navigation-search {
   width: 16px;
   height: 16px;
@@ -6,9 +10,28 @@
 .navigation-item {
   font-family: var(--f-grey);
   text-transform: uppercase;
+
+  &:hover+.navigation-link-decor {
+    opacity: 1;
+  }
+}
+
+.navigation-item-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .navigation-link {
   color: var(--c-dark);
   letter-spacing: 3px;
+}
+
+.navigation-link-decor {
+  width: 40px;
+  height: 1px;
+  background-color: var(--c-black);
+  opacity: 0;
+  transition: all .5s ease-in-out;
 }

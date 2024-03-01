@@ -65,12 +65,12 @@
 }
 
 .icon-arrow {
-  fill:var(--c-light-grey);
+  fill: var(--c-light-grey);
   transition: all .3s ease-in-out;
 
+
   &:hover {
-    fill: red;
+    fill: var(--c-red);
     transform: scale(1.5) translateY(-2px);
   }
 }
-
