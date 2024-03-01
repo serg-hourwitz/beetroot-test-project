@@ -21,13 +21,14 @@
 }
 
 .article-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   max-width: 450px;
-  padding-top: 85px;
-  padding-bottom: 85px;
 }
 
-.content-top {
-  padding-left: 30px;
+.content-bottom {
+  margin-left: auto;
 }
 
 .article-title {
