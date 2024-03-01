@@ -1,0 +1,17 @@
+.navigation-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navigation-items-container {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+}
+
+.navigation-list {
+  max-width: 500px;
+  display: flex;
+  gap: 40px;
+}

@@ -1,0 +1,65 @@
+// * Banner
+
+.main-title {
+  display: block;
+  max-width: 770px;
+  margin-top: 100px;
+  font-size: var(--fs-big);
+  font-weight: var(--fw-bold);
+  line-height: 64px;
+  letter-spacing: 2px;
+}
+
+// * Section
+
+.section-title {
+  font-size: var(--fs-big);
+  font-weight: var(--fw-bold);
+  line-height: 64px;
+  letter-spacing: 2px;
+  margin-bottom: 50px;
+}
+
+.article-content {
+  max-width: 450px;
+  padding-top: 85px;
+  padding-bottom: 85px;
+}
+
+.content-top {
+  padding-left: 30px;
+}
+
+.article-title {
+  font-family: var(--f-grey);
+  line-height: 28px;
+  letter-spacing: 4px;
+  color: var(--c-black);
+  margin-bottom: 15px;
+}
+
+.article-subtitle {
+  font-family: var(--f-grey);
+  font-weight: var(--fw-reg);
+  color: var(--c-light-grey);
+  letter-spacing: 1.3px;
+  margin-bottom: 30px;
+}
+
+.article-date {
+  display: block;
+  font-family: var(--f-grey);
+  font-weight: var(--fw-reg);
+  color: var(--c-light-grey);
+  margin-bottom: 50px;
+}
+
+.article-text {
+  font-family: var(--f-grey);
+  color: var(--c-dark-grey);
+  line-height: 28px;
+}
+
+.article-text-link {
+  padding-left: 13px;
+}
