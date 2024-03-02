@@ -6,7 +6,16 @@
   font-size: var(--fs-big);
   font-weight: var(--fw-bold);
   line-height: 64px;
-  letter-spacing: 2px;
+  letter-spacing: 3px;
+
+  @include media('<=tablet') {
+    font-size: var(--fs-tablet);
+    line-height: 50px;
+  }
+
+  @include media('<=phone') {
+    font-size: var(--fs-phone);
+  }
 }
 
 // * Section
@@ -17,12 +26,22 @@
   line-height: 64px;
   letter-spacing: 2px;
   margin-bottom: 50px;
+
+  @include media('<=phone') {
+    text-align: center;
+  }
+}
+
+@include media('<=phone') {
+  .article-picture {
+    grid-row: 2 / 3;
+  }
 }
 
 .article-title {
   font-family: var(--f-grey);
   line-height: 28px;
-  letter-spacing: 4px;
+  letter-spacing: 3px;
   color: var(--c-black);
   margin-bottom: 15px;
 }
@@ -47,6 +66,10 @@
   font-family: var(--f-grey);
   color: var(--c-dark-grey);
   line-height: 28px;
+
+  @include media('<=phone') {
+    margin-bottom: 30px;
+  }
 }
 
 .article-text-link {

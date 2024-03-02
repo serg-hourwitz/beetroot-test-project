@@ -2,6 +2,10 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 30px;
+
+  @include media('<=phone') {
+    grid-template-columns: 1fr;
+  }
 }
 
 .article-top {

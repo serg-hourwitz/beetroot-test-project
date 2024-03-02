@@ -14,4 +14,21 @@
   max-width: 500px;
   display: flex;
   gap: 40px;
+
+  @include media('<=tablet') {
+    justify-content: center;
+      pointer-events: none;
+      align-items: center;
+      min-height: 100vh;
+      position: fixed;
+      display: flex;
+      height: 100%;
+      z-index: 901;
+      width: 100%;
+      opacity: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      top: 0;
+  }
 }

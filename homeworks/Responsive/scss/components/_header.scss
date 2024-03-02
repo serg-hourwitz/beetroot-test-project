@@ -1,4 +1,9 @@
 .header {
-  padding-top: 45px;
-  padding-bottom: 45px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  @include media('<=tablet') {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
 }

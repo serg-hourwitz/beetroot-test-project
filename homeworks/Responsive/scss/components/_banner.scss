@@ -5,4 +5,22 @@
   background-image: url(./assets/bg-image.png);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
+
+  @include media('<=desktop') {
+    background-size: contain;
+    background-position: top;
+  }
+
+  @include media('<=tablet') {
+    max-height: 320px;
+    padding: 20px;
+    margin-bottom: 70px;
+  }
+
+  @include media('<=phone') {
+    min-height: 500px;
+    padding-top: 70px;
+    background-size: cover;
+  }
 }
