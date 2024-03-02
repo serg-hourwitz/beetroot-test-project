@@ -1,3 +1,10 @@
-.section-articles-wrapper {
-  
+.article-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 450px;
+}
+
+.content-bottom {
+  margin-left: auto;
 }
