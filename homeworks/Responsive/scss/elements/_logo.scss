@@ -4,4 +4,8 @@
   min-width: 120px;
   display: flex;
   width: 100%;
+
+  @include media('<=tablet') {
+    padding-top: 6px;
+  }
 }

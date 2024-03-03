@@ -44,7 +44,7 @@
       <header class="header">
         <div class="wrapper header-wrapper">
           <!-- navigation -->
-          <nav class="container navigation-container">
+          <nav class="container navigation-container navigation">
             <div class="navigation-logo">
               <a href="#" class="navigation-logo-link">
                 <img
@@ -55,60 +55,64 @@
             </div>
             <!-- nav-list -->
             <div class="navigation-items-container">
-              <ul class="navigation-list">
+              <ul class="navigation-list" id="js-navigation">
                 <!-- HOME -->
                 <div class="navigation-item-block">
                   <li class="navigation-item">
-                    <a href="#" class="navigation-link">home</a>
+                    <a href="#" class="link navigation-link">home</a>
                   </li>
                   <div class="navigation-link-decor"></div>
                 </div>
                 <!-- ABOUT -->
                 <div class="navigation-item-block">
                   <li class="navigation-item">
-                    <a href="#" class="navigation-link">about</a>
+                    <a href="#" class="link navigation-link">about</a>
                   </li>
                   <div class="navigation-link-decor"></div>
                 </div>
                 <!-- WORKS -->
                 <div class="navigation-item-block">
                   <li class="navigation-item">
-                    <a href="#" class="navigation-link">works</a>
+                    <a href="#" class="link navigation-link">works</a>
                   </li>
                   <div class="navigation-link-decor"></div>
                 </div>
                 <!-- BLOG -->
                 <div class="navigation-item-block">
                   <li class="navigation-item">
-                    <a href="#blog" class="navigation-link">blog</a>
+                    <a href="#blog" class="link navigation-link">blog</a>
                   </li>
                   <div class="navigation-link-decor"></div>
                 </div>
                 <!-- CONTACT -->
                 <div class="navigation-item-block">
                   <li class="navigation-item">
-                    <a href="#" class="navigation-link">contact</a>
+                    <a href="#" class="link navigation-link">contact</a>
                   </li>
                   <div class="navigation-link-decor"></div>
                 </div>
               </ul>
               <!-- search -->
               <div class="navigation-search">
-                <a href="#" class="navigation-search-link"
+                <a href="#" class="link navigation-search-link"
                   ><img
                     class="navigation-search-img"
                     src="./assets/search.svg"
                     alt="search"
-                /></a>
+                  />
+                </a>
+                <button class="burger" type="button" id="js-burger">
+                  <span class="burger-line"></span
+                  ><span class="burger-line"></span
+                  ><span class="burger-line"></span>
+                </button>
               </div>
             </div>
           </nav>
         </div>
       </header>
       <!-- * Banner -->
-      <div
-        class="banner"
-      >
+      <div class="banner">
         <div class="wrapper banner-wrapper">
           <div class="container banner-container">
             <h1 class="main-title">
@@ -141,7 +145,8 @@
                     influence to drive this.
                     <a class="article-text-link" href="#"
                       ><svg class="icon icon-arrow">
-                        <use xlink:href="#icon-arrow"></use></svg></a>
+                        <use xlink:href="#icon-arrow"></use></svg
+                    ></a>
                   </p>
                 </div>
               </article>
@@ -159,7 +164,8 @@
                     influence to drive this.
                     <a class="article-text-link" href="#"
                       ><svg class="icon icon-arrow">
-                        <use xlink:href="#icon-arrow"></use></svg></a>
+                        <use xlink:href="#icon-arrow"></use></svg
+                    ></a>
                   </p>
                 </div>
                 <div class="article-picture">
@@ -171,5 +177,6 @@
         </div>
       </section>
     </div>
+    <script src="./index.js"></script>
   </body>
 </html>

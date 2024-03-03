@@ -3,6 +3,17 @@
 }
 
 .navigation-search {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+
+  @include media('<=phone') {
+    gap: 20px;
+  }
+}
+
+.navigation-search-link {
+  display: block;
   width: 16px;
   height: 16px;
 }

@@ -8,13 +8,16 @@
   line-height: 64px;
   letter-spacing: 3px;
 
+
+
   @include media('<=tablet') {
     font-size: var(--fs-tablet);
     line-height: 50px;
   }
 
-  @include media('<=phone') {
+  @include media('<=mob') {
     font-size: var(--fs-phone);
+    line-height: 30px;
   }
 }
 
@@ -67,7 +70,7 @@
   color: var(--c-dark-grey);
   line-height: 28px;
 
-  @include media('<=phone') {
+  @include media('<=mob') {
     margin-bottom: 30px;
   }
 }

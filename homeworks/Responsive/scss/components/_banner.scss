@@ -8,8 +8,7 @@
   background-position: center;
 
   @include media('<=desktop') {
-    background-size: contain;
-    background-position: top;
+    padding-top: 50px;
   }
 
   @include media('<=tablet') {
