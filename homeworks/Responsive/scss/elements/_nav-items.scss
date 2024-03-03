@@ -16,6 +16,11 @@
   display: block;
   width: 16px;
   height: 16px;
+  transition: var(--t-normal);
+
+  &:hover {
+    transform: scale(1.5);
+  }
 }
 
 .navigation-item {
