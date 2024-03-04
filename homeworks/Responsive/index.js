@@ -7,3 +7,12 @@ if (DOMBurger) {
     DOMNavigation.classList.toggle("navigation-list--open");
   });
 }
+
+const DOMLink = document.querySelectorAll(".link");
+
+DOMLink.forEach(n => n.addEventListener("click", closeMenu));
+
+function closeMenu() {
+    DOMBurger.classList.remove("burger--open");
+    DOMNavigation.classList.remove("navigation-list--open");
+}; 
