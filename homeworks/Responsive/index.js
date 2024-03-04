@@ -10,9 +10,9 @@ if (DOMBurger) {
 
 const DOMLink = document.querySelectorAll(".link");
 
-DOMLink.forEach(n => n.addEventListener("click", closeMenu));
+DOMLink.forEach((n) => n.addEventListener("click", closeMenu));
 
 function closeMenu() {
-    DOMBurger.classList.remove("burger--open");
-    DOMNavigation.classList.remove("navigation-list--open");
-}; 
+  DOMBurger.classList.remove("burger--open");
+  DOMNavigation.classList.remove("navigation-list--open");
+}
