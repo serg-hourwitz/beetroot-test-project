@@ -5,7 +5,7 @@
   display: flex;
   width: 100%;
 
-  @include media('<=tablet') {
+  @include media('<=middle') {
     padding-top: 6px;
   }
 }

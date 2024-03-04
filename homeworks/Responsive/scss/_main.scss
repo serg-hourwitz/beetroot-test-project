@@ -27,7 +27,7 @@ body {
   max-width: 1170px;
   margin: 0 auto;
 
-  @include media('<=tablet') {
+  @include media('<=middle') {
     padding-left: 20px;
     padding-right: 20px;
   }
