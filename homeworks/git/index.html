@@ -1,16 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="../../favicon/favicon.ico"
+      type="image/x-icon"
+    />
+    <title>GIT</title>
+    <link rel="stylesheet" href="../styles/normalize.css" />
+    <style>
+      .animation-container {
+        width: 500px;
+        height: 500px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="../../favicon/favicon.ico" type="image/x-icon" />
-  <title>GIT</title>
-  <link rel="stylesheet" href="../styles/normalize.css">
-</head>
+      .rect {
+        position: absolute;
+        width: 150px;
+        height: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: red;
+        animation-name: example;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+      }
 
-<body>
-  <a href="../../index.html">HOME</a>
-</body>
+      h1 {
+        text-align: center;
+      }
 
+      .wrapper {
+        max-width: 1170px;
+        margin: 0 auto;
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+
+      .animation {
+        position: relative;
+        height: 100vh;
+      }
+
+      @keyframes example {
+        0% {
+          background-color: red;
+          left: 0px;
+          top: 0px;
+          transform: rotate(45deg);
+        }
+        25% {
+          background-color: yellow;
+          left: 200px;
+          top: 0px;
+          border-radius: 25%;
+          transform: rotate(45deg);
+          color: blue;
+        }
+        50% {
+          background-color: blue;
+          left: 200px;
+          top: 200px;
+          border-radius: 45%;
+          transform: rotate(90deg);
+          color: yellow;
+        }
+        75% {
+          background-color: green;
+          left: 0px;
+          top: 200px;
+          border-radius: 25%;
+          transform: rotate(-135deg);
+          color: white;
+        }
+        100% {
+          background-color: red;
+          left: 0px;
+          top: 0px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <a href="../../index.html">HOME</a>
+    <div class="app">
+      <div class="wrapper">
+        <div class="animation">
+          <div class="animation-container">
+            <div class="rect">
+              <h1>CSS Animation</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
