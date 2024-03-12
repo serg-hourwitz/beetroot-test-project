@@ -1,6 +1,7 @@
 const greeting = alert('Hi, Arthur!');
 
 const isAdult = confirm('Is your age > 18 ?');
+console.log(isAdult);
 
 // Name
 
@@ -46,7 +47,7 @@ console.log(
 
 // Currency exchange
 
-const usdAmount = prompt('How match dollars do You want to exchange ?');
+const usdAmount = prompt('How match dollars do You want to exchange ?', 100);
 const euroUsdRate = 0.902;
 const euroAmount = usdAmount * euroUsdRate;
 
