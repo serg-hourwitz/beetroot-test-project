@@ -14,7 +14,7 @@ const yearOfBirth = prompt("What is Your year of birth?");
 const currentYear = 2024;
 const age = currentYear - yearOfBirth;
 
-console.log(`You are is ${age}.`);
+console.log(`You are ${age}.`);
 
 // Perimeter
 
