@@ -19,8 +19,8 @@ console.log(`You are ${age}.`);
 
 // Perimeter
 
-const length = prompt('What is a length of square side ?');
-const perimeter = length * 4;
+const sideLength = prompt('What is a length of square side ?');
+const perimeter = sideLength * 4;
 
 console.log(`Perimeter of square is ${perimeter} units.`);
 
