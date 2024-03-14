@@ -61,7 +61,10 @@ if (
 
 const threeDigitNumber_1 = prompt('Enter three-digit number#1:');
 
-if (!isNaN(threeDigitNumber_1) && threeDigitNumber_1.length === 3) {
+if (
+  !isNaN(threeDigitNumber_1) &&
+  threeDigitNumber_1.length === 3
+) {
   const digit_1 = Math.floor(threeDigitNumber_1 / 100);
   const digit_2 = Math.floor((threeDigitNumber_1 % 100) / 10);
   const digit_3 = threeDigitNumber_1 % 10;
@@ -70,19 +73,22 @@ if (!isNaN(threeDigitNumber_1) && threeDigitNumber_1.length === 3) {
 
   console.log(`Reversed number of ${threeDigitNumber_1} is ${reversedNumber}.`);
 } else {
-  console.log('Please enter the correct numbers !');
+  console.log("Please enter the correct numbers !");
 }
 
 // method#2
 
 const threeDigitNumber_2 = prompt('Enter three-digit number#2:');
 
-if (!isNaN(threeDigitNumber_2) && threeDigitNumber_2.length === 3) {
-  const reversedNumber = threeDigitNumber_2.split('').reverse().join('');
+if (
+  !isNaN(threeDigitNumber_2) &&
+  threeDigitNumber_2.length === 3 
+) {
+  const reversedNumber = threeDigitNumber_2.split("").reverse().join("");
 
   console.log(`Reversed number of ${threeDigitNumber_2} is ${reversedNumber}.`);
 } else {
-  console.log('Please, enter correct data !');
+  console.log("Please, enter correct data !");
 }
 
 // the amount of accrued interest
