@@ -1,10 +1,10 @@
 // 0.1 + 0.2
-
+// Виконай додавання 0,1 і 0,2 добийся математично правильної відповіді.
 const sumToFixed = (0.1 + 0.2).toFixed(1);
 console.log(`Mathematically corrected result of 0.1 + 0.2 is ${sumToFixed}.`);
 
 // '1' + 2
-
+// Виконай додавання рядка "1" і цифри 2 (обидві операнди повинні бути в змінних), добийся математично правильної відповіді.
 const str = '1';
 const num = 2;
 
@@ -15,6 +15,7 @@ console.log(
 );
 
 // files amount
+// Користувач вказує обсяг флешки в Гб. Програма повинна порахувати скільки файлів розміром в 820 Мб поміщається на флешку.
 
 const flashMemoryVolume = +prompt('Enter your flash memory volume in Hb');
 
@@ -25,6 +26,7 @@ console.log(
 );
 
 // chocolate & change
+// Користувач вводить суму грошей в гаманці і ціну однієї шоколадки. Програма виводить скільки шоколадок може купити користувач і скільки здачі у нього залишиться.
 
 const walletAmount = parseFloat(
   prompt('Enter your total amount of money in EURO:')
@@ -56,6 +58,7 @@ if (
 }
 
 // reversed number
+// Запитай у користувача тризначне число і виведи його задом наперед. Для вирішення завдання тобі знадобиться оператор % (залишок від ділення).
 
 // method#1
 
@@ -92,6 +95,7 @@ if (
 }
 
 // the amount of accrued interest
+// Користувач вводить суму вкладу в банк на 2 місяці, з процентною ставкою депозиту 5% річних. Вивести суму нарахованих відсотків.
 
 const amountOfDeposit = Math.floor(
   +prompt('Enter the amount of the USD deposit in the bank:')
