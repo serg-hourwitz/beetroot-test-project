@@ -8,7 +8,7 @@ console.log(`Mathematically corrected result of 0.1 + 0.2 is ${sumToFixed}.`);
 const str = '1';
 const num = 2;
 
-const sumToNumber = +str + 2;
+const sumToNumber = +str + num;
 
 console.log(
   `Mathematically corrected result of '${str}' + ${num} is ${sumToNumber}.`
