@@ -20,40 +20,48 @@ const flashMemoryVolume = +prompt('Enter your flash memory volume in Hb');
 
 let result = Math.floor(flashMemoryVolume / 0.82);
 
-console.log(`Flash memory volume ${flashMemoryVolume}Hb contains ${result} file(s) by 820Mb.`);
+console.log(
+  `Flash memory volume ${flashMemoryVolume}Hb contains ${result} file(s) by 820Mb.`
+);
 
 // chocolate & change
 
-const sumMoney = (+prompt('Enter your total amount of money in EURO:')).toFixed(2);
-const priceChocolate = (+prompt('Enter a price of one chocolate')).toFixed(2);
+const walletAmount = parseFloat(
+  prompt('Enter your total amount of money in EURO:')
+);
+const chocolatePrice = parseFloat(prompt('Enter a price of one chocolate'));
 
-let amountChocolates = Math.floor(sumMoney / priceChocolate);
-let change = (sumMoney % priceChocolate).toFixed(2);
+let chocolatesBought = Math.floor(walletAmount / chocolatePrice);
+let change = walletAmount - chocolatesBought * chocolatePrice;
 
-if (!isNaN(sumMoney) && sumMoney > 0 && (!isNaN(priceChocolate) && priceChocolate > 0)) {
-
+if (
+  !isNaN(walletAmount) &&
+  walletAmount > 0 &&
+  !isNaN(chocolatePrice) &&
+  chocolatePrice > 0 &&
+  walletAmount >= chocolatePrice
+) {
   if (change !== 0) {
     console.log(
-      `You can buy ${amountChocolates} chocolates at a price ${priceChocolate} EURO for ${sumMoney} and get ${change} EURO change to help Ukraine.`
-    );
-  } else {
-    console.log(
-      `You can buy ${amountChocolates} chocolates at a price ${priceChocolate} for ${sumMoney} without a change.`
+      `You can buy ${chocolatesBought} chocolates at a price ${chocolatePrice} EURO for ${walletAmount} and get ${change} EURO change to help Ukraine.`
     );
   }
-
+  if (change === 0) {
+    console.log(
+      `You can buy ${chocolatesBought} chocolates at a price ${chocolatePrice} for ${walletAmount} without a change.`
+    );
+  }
 } else {
-  console.log('Please, enter correct data !');
+  console.log('Please enter the correct numbers !');
 }
 
 // reversed number
 
-  // method#1
+// method#1
 
 const threeDigitNumber_1 = prompt('Enter three-digit number#1:');
 
 if (!isNaN(threeDigitNumber_1) && threeDigitNumber_1.length === 3) {
-
   const digit_1 = Math.floor(threeDigitNumber_1 / 100);
   const digit_2 = Math.floor((threeDigitNumber_1 % 100) / 10);
   const digit_3 = threeDigitNumber_1 % 10;
@@ -62,15 +70,14 @@ if (!isNaN(threeDigitNumber_1) && threeDigitNumber_1.length === 3) {
 
   console.log(`Reversed number of ${threeDigitNumber_1} is ${reversedNumber}.`);
 } else {
-  console.log('Please, enter correct data !');
+  console.log('Please enter the correct numbers !');
 }
 
-  // method#2
-  
+// method#2
+
 const threeDigitNumber_2 = prompt('Enter three-digit number#2:');
 
 if (!isNaN(threeDigitNumber_2) && threeDigitNumber_2.length === 3) {
-
   const reversedNumber = threeDigitNumber_2.split('').reverse().join('');
 
   console.log(`Reversed number of ${threeDigitNumber_2} is ${reversedNumber}.`);
@@ -80,14 +87,13 @@ if (!isNaN(threeDigitNumber_2) && threeDigitNumber_2.length === 3) {
 
 // the amount of accrued interest
 
-const amountOfDeposit = Math.floor(+prompt(
-  'Enter the amount of the USD deposit in the bank:'
-)).toFixed(2);
+const amountOfDeposit = Math.floor(
+  +prompt('Enter the amount of the USD deposit in the bank:')
+).toFixed(2);
 let termOfDepositMonths = 2;
 let depositInterestRate = 0.05;
 
 if (!isNaN(amountOfDeposit) && amountOfDeposit > 0) {
-
   const amountOfAccruedInterest = (
     (Math.floor(amountOfDeposit * depositInterestRate) / 12) *
     termOfDepositMonths
@@ -98,7 +104,6 @@ if (!isNaN(amountOfDeposit) && amountOfDeposit > 0) {
       depositInterestRate * 100
     }% is ${amountOfAccruedInterest} USD.`
   );
-
 } else {
-  console.log('Please, enter correct data !');
+  console.log('Please enter the correct numbers !');
 }
