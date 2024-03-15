@@ -66,7 +66,8 @@ const threeDigitNumber_1 = prompt('Enter three-digit number#1:');
 
 if (
   !isNaN(threeDigitNumber_1) &&
-  threeDigitNumber_1.length === 3
+  threeDigitNumber_1.length === 3 &&
+  threeDigitNumber_1 !== ''
 ) {
   const digit_1 = Math.floor(threeDigitNumber_1 / 100);
   const digit_2 = Math.floor((threeDigitNumber_1 % 100) / 10);
