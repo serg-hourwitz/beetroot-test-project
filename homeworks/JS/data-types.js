@@ -1,7 +1,7 @@
 // 0.1 + 0.2
 // Виконай додавання 0,1 і 0,2 добийся математично правильної відповіді.
 const sumToFixed = (0.1 + 0.2).toFixed(1);
-console.log(`Mathematically corrected result of 0.1 + 0.2 is ${sumToFixed}.`);
+console.log(`Mathematically corrected result of 0.1 + 0.2 is ${+sumToFixed}.`);
 
 // '1' + 2
 // Виконай додавання рядка "1" і цифри 2 (обидві операнди повинні бути в змінних), добийся математично правильної відповіді.
@@ -34,7 +34,7 @@ const walletAmount = parseFloat(
 const chocolatePrice = parseFloat(prompt('Enter a price of one chocolate'));
 
 let chocolatesBought = Math.floor(walletAmount / chocolatePrice);
-let change = walletAmount - chocolatesBought * chocolatePrice;
+let change = (walletAmount - chocolatesBought * chocolatePrice).toFixed(2);
 
 if (
   !isNaN(walletAmount) &&
@@ -45,7 +45,7 @@ if (
 ) {
   if (change !== 0) {
     console.log(
-      `You can buy ${chocolatesBought} chocolates at a price ${chocolatePrice} EURO for ${walletAmount} and get ${change} EURO change to help Ukraine.`
+      `You can buy ${chocolatesBought} chocolates at a price ${chocolatePrice} EURO for ${walletAmount} EURO and get ${change} EURO change to help Ukraine.`
     );
   }
   if (change === 0) {
@@ -76,7 +76,7 @@ if (
 
   const reversedNumber = digit_3 * 100 + digit_2 * 10 + digit_1;
 
-  console.log(`Reversed number of ${threeDigitNumber_1} is ${reversedNumber}.`);
+  console.log(`Reversed number of ${+threeDigitNumber_1} is ${+reversedNumber}.`);
 } else {
   console.log("Please enter the correct numbers !");
 }
@@ -92,9 +92,9 @@ if (
 ) {
   const reversedNumber = threeDigitNumber_2.split("").reverse().join("");
 
-  console.log(`Reversed number of ${threeDigitNumber_2} is ${reversedNumber}.`);
+  console.log(`Reversed number of ${+threeDigitNumber_2} is ${+reversedNumber}.`);
 } else {
-  console.log("Please, enter correct data !");
+  console.log("Please enter the correct numbers !");
 }
 
 // the amount of accrued interest
