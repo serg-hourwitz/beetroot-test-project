@@ -29,9 +29,9 @@ console.log(
 // Користувач вводить суму грошей в гаманці і ціну однієї шоколадки. Програма виводить скільки шоколадок може купити користувач і скільки здачі у нього залишиться.
 
 const walletAmount = parseFloat(
-  prompt('Enter your total amount of money in EURO:')
+  prompt('Enter your total amount of money :', 'EURO')
 );
-const chocolatePrice = parseFloat(prompt('Enter a price of one chocolate'));
+const chocolatePrice = parseFloat(prompt('Enter a price of one chocolate :', EURO));
 
 let chocolatesBought = Math.floor(walletAmount / chocolatePrice);
 let change = (walletAmount - chocolatesBought * chocolatePrice).toFixed(2);
