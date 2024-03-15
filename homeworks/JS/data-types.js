@@ -65,6 +65,7 @@ if (
 const threeDigitNumber_1 = prompt('Enter three-digit number#1:');
 
 if (
+  threeDigitNumber_1 !== null &&
   !isNaN(threeDigitNumber_1) &&
   threeDigitNumber_1.length === 3 &&
   threeDigitNumber_1 !== ''
@@ -85,6 +86,7 @@ if (
 const threeDigitNumber_2 = prompt('Enter three-digit number#2:');
 
 if (
+  threeDigitNumber_1 !== null &&
   !isNaN(threeDigitNumber_2) &&
   threeDigitNumber_2.length === 3 
 ) {
