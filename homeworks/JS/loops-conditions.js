@@ -84,9 +84,10 @@ let numbers = [];
 
 // Switch to limit the input to 10 numbers
 let count = 0;
+let times = 10;
 
-while (count < 10) {
-  let input = parseInt(prompt("Please enter a number 10 times:"));
+while (count < 10, times > 0) {
+  const input = parseInt(prompt(`Please enter a number ${times} times:`));
   numbers.push(input);
 
   if (isNaN(input)) {
@@ -106,7 +107,7 @@ while (count < 10) {
   } else if (input !== 0) {
     oddCount++;
   }
-
+  times--;
   count++;
 }
 
@@ -128,7 +129,7 @@ do {
     // Display of the current day of the week and user query
     const userInput = confirm(`${daysOfWeek[currentIndex]}. Do U want to see next day ?`);
 
-    // If the user clicked "Cancel", we exit the loop
+    // If the user clicked "Cancel", exit the loop
     if (!userInput) {
         break;
     }
@@ -146,7 +147,7 @@ let min = 0;
 let max = 100;
 let guess;
 
-const userNum = parseInt(prompt("Please guess a number from 0 to 100."));
+const userNum = parseInt(prompt("Please guess a number from 0 to 100:", 0));
 
 // цикл гри
 while (true) {
@@ -164,6 +165,10 @@ while (true) {
         break;
     } else {
       alert("Please enter '>' or '<' or '='.");
+    }
+
+  if (!userNum) {
+        break;
     }
 }
 
