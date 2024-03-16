@@ -86,7 +86,7 @@ let numbers = [];
 let count = 0;
 
 while (count < 10) {
-  let input = parseInt(prompt("Please enter a number:"));
+  let input = parseInt(prompt("Please enter a number 10 times:"));
   numbers.push(input);
 
   if (isNaN(input)) {
@@ -146,7 +146,7 @@ let min = 0;
 let max = 100;
 let guess;
 
-const userNum = parseInt(prompt("Будь ласка, загадайте число від 0 до 100."));
+const userNum = parseInt(prompt("Please guess a number from 0 to 100."));
 
 // цикл гри
 while (true) {
