@@ -160,17 +160,16 @@ while (true) {
     } else if (userInp === "<") {
         max = guess - 1;
     } else if (userInp === "=") {
-        alert(`Гарно! Я вгадав ваше число ${guess}!`);
+        alert(`Great! I guessed your number ${guess}!`);
         break;
     } else {
-      alert("Будь ласка, введіть '>' або '<' або '='.");
+      alert("Please enter '>' or '<' or '='.");
     }
 }
-
+console.log("");
 
 
 // Виведи таблицю множення для всіх чисел від 2 до 9. Кожне число необхідно помножити на числа від 1 до 10.
-
 console.log("multiplication table:");
 console.log("");
 
