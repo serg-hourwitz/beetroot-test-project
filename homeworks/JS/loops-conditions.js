@@ -32,7 +32,8 @@ if (
   userNumber === "" ||
   userNumber === null ||
   userNumber < 0 ||
-  userNumber > 9 || isNaN(userNumber)
+  userNumber > 9 ||
+  isNaN(userNumber)
 ) {
   console.log("Enter correct number !");
 } else {
@@ -86,7 +87,7 @@ let numbers = [];
 let count = 0;
 let times = 10;
 
-while (count < 10, times > 0) {
+while ((count < 10, times > 0)) {
   const input = parseInt(prompt(`Please enter a number ${times} times:`));
   numbers.push(input);
 
@@ -117,28 +118,27 @@ console.log("Number of zeros:", zeroCount);
 console.log("Number of even numbers (except zero):", evenCount);
 console.log("Number of odd numbers:", oddCount);
 
-
 // Зацикли відображення днів тижня таким чином: «День тижня. Хочеш побачити наступний день? » і так до тих пір, поки користувач натискає OK.
 
-const daysOfWeek = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+const daysOfWeek = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 
 // Variable to store the day of the week index
 let currentIndex = 0;
 
 do {
-    // Display of the current day of the week and user query
-    const userInput = confirm(`${daysOfWeek[currentIndex]}. Do U want to see next day ?`);
+  // Display of the current day of the week and user query
+  const userInput = confirm(
+    `${daysOfWeek[currentIndex]}. Do U want to see next day ?`
+  );
 
-    // If the user clicked "Cancel", exit the loop
-    if (!userInput) {
-        break;
-    }
+  // If the user clicked "Cancel", exit the loop
+  if (!userInput) {
+    break;
+  }
 
-    // Increments the index for the next day of the week, ensuring cyclicality
-    currentIndex = (currentIndex + 1) % daysOfWeek.length;
+  // Increments the index for the next day of the week, ensuring cyclicality
+  currentIndex = (currentIndex + 1) % daysOfWeek.length;
 } while (true);
-
-
 
 // Гра «Вгадай число». Запропонуй користувачеві загадати число від 0 до 100 і відгадай його наступним способом: кожну ітерацію циклу діли діапазон чисел навпіл, записуй результат в N і питай у користувача «Ваше число> N, <N або == N?». Залежно від того що вказав користувач, зменшуй діапазон. Початковий діапазон від 0 до 100, поділи навпіл і отримай 50. Якщо користувач вказав, що його число> 50, то зміни діапазон на від 50 до 100. І так до тих пір, поки користувач не вибере == N (буде корисним почитати про алгоритм: "бінарний пошук").
 
@@ -151,27 +151,28 @@ const userNum = parseInt(prompt("Please guess a number from 0 to 100:", 0));
 
 // цикл гри
 while (true) {
-    // a new number among the known range
-    guess = Math.floor((min + max) / 2);
+  // a new number among the known range
+  guess = Math.floor((min + max) / 2);
 
-    let userInp = prompt(`Your number > ${guess}, < ${guess}, or = ${guess}? Enter '>', '<', or '='.`);
+  let userInp = prompt(
+    `Your number > ${guess}, < ${guess}, or = ${guess}? Enter '>', '<', or '='.`
+  );
 
-    if (userInp === ">") {
-        min = guess + 1;
-    } else if (userInp === "<") {
-        max = guess - 1;
-    } else if (userInp === "=") {
-        alert(`Great! I guessed your number ${guess}!`);
-        break;
-    } else {
-      alert("Please enter '>' or '<' or '='.");
-    }
+  if (userInp === ">") {
+    min = guess + 1;
+  } else if (userInp === "<") {
+    max = guess - 1;
+  } else if (userInp === "=") {
+    alert(`Great! I guessed your number ${guess}!`);
+    break;
+  } else {
+    alert("Please enter '>' or '<' or '='.");
+  }
 
   if (!userNum) {
-        break;
-    }
+    break;
+  }
 }
-
 
 // Виведи таблицю множення для всіх чисел від 2 до 9. Кожне число необхідно помножити на числа від 1 до 10.
 console.log("");
