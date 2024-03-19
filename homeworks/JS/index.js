@@ -13,6 +13,7 @@ import objects from "./js/objects.js";
 // Functions
 import functions from "./js/functions.js";
 functions();
+
 // Arrays
 import arrays from "./js/arrays.js";
 
