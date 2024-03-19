@@ -38,38 +38,6 @@ const loopConditions = () => {
     console.log("Enter correct number !");
   } else {
     console.log(")!@#$%^&*("[userNumber]);
-    // switch (userNumber) {
-    //   case 0:
-    //     console.log(`${userNumber} corresponds to the symbol ')'`);
-    //     break;
-    //   case 1:
-    //     console.log(`${userNumber} corresponds to the symbol '!'`);
-    //     break;
-    //   case 2:
-    //     console.log(`${userNumber} corresponds to the symbol '@'`);
-    //     break;
-    //   case 3:
-    //     console.log(`${userNumber} corresponds to the symbol '#'`);
-    //     break;
-    //   case  4:
-    //     console.log(`${userNumber} corresponds to the symbol '$'`);
-    //     break;
-    //   case 5:
-    //     console.log(`${userNumber} corresponds to the symbol '%'`);
-    //     break;
-    //   case 6:
-    //     console.log(`${userNumber} corresponds to the symbol '^'`);
-    //     break;
-    //   case  7:
-    //     console.log(`${userNumber} corresponds to the symbol '&'`);
-    //     break;
-    //   case  8:
-    //     console.log(`${userNumber} corresponds to the symbol '*'`);
-    //     break;
-    //   case 9:
-    //     console.log(`${userNumber} corresponds to the symbol '('`);
-    //     break;
-    // }
   }
 
   // Запитай у користувача 10 чисел і порахуй, скільки він ввів додатніх, від’ємних і нулів. При цьому також порахуй, скільки з них парних і непарних. Виведи статистику на екран. Враховуй, що достатньо однієї змінної (не 10) для введення чисел користувачем.
