@@ -2,7 +2,7 @@ import errorNumber from "./error-number.js";
 
 const functions = () => {
   // Напиши всі можливі варіанти створення функцій.
-  function myFunction() { };
+  function myFunction() {}
 
   const myFunction1 = function () {};
 
@@ -10,11 +10,13 @@ const functions = () => {
 
   // Створи функцію, яка буде виводити кількість переданих їй аргументів.
 
-  const getArgumentsAmount = (a, b, c) => {};
+  const getArgumentsAmount = (...args) => {
+    console.log(`Function 'getArgumentsAmount' get ${args.length} arguments.`);
+  };
 
-  console.log(
-    `Function 'getArgumentsAmount' get ${getArgumentsAmount.length} arguments.`
-  );
+  getArgumentsAmount(1, 2);
+  getArgumentsAmount(1, 2, 3);
+  getArgumentsAmount(1, -1, "!!!", []);
 
   /* Напиши функцію, яка приймає 2 числа і повертає :
       -1, якщо перше число менше, ніж друге; 
@@ -36,27 +38,14 @@ const functions = () => {
 
   // Напиши функцію, яка обчислює факторіал переданого їй числа.
 
-  const factorial = (number) => {
-    if (number < 0 || errorNumber(number)) {
-      return "incorrect number";
-    }
+  function factorial(n) {
+    if (n <= 1) return 1;
 
-    if (number === 0 || number === 1) {
-      return "Factorial of 0 or 1 = 1";
-    } else {
-      let result = 1;
-      for (let i = 2; i <= number; i++) {
-        result *= i;
-      }
-      return `${number}! = ${result}`;
-    }
-  };
+    return n * factorial(n - 1);
+  }
 
-  console.log(factorial(3));
-  console.log(factorial(5));
-  console.log(factorial(-5));
-  console.log(factorial(""));
-  console.log(factorial(null));
+  const result = factorial(5);
+  console.log("5! = ", result);
 
   /* Напиши функцію, яка приймає три окремі цифри і перетворює їх в одне число. Наприклад: цифри 1, 4, 9 перетворяться в число 149.*/
 
@@ -65,7 +54,7 @@ const functions = () => {
       return "incorrect input";
     }
 
-    let res = "" + a + b + c;
+    let res = String(a) + b + c;
 
     return +res;
   };
@@ -90,7 +79,7 @@ const functions = () => {
   /* Напиши функцію, яка перевіряє, чи є передане їй число “досконалим числом”. Досконале число - це число, яке дорівнює сумі всіх своїх дільників.*/
 
   const isPerfectNumber = (num) => {
-    if (errorNumber(num) || num <= 0) return 'incorrect input';
+    if (errorNumber(num) || num <= 0) return "incorrect input";
 
     let sum = 0;
     for (let i = 1; i < num; i++) {
@@ -111,7 +100,7 @@ const functions = () => {
   /* Напиши функцію, яка приймає мінімальне і максимальне значення для діапазону, і виводить тільки ті числа з діапазону, які є досконалими. Використовуй написану раніше функцію, щоб дізнатися, чи є це число досконалим. */
 
   const perfectNumbersInRange = (min, max) => {
-    if (errorNumber(min) || errorNumber(max)) return 'incorrect input';
+    if (errorNumber(min) || errorNumber(max)) return "incorrect input";
 
     const perfectNumbers = [];
     for (let i = min; i <= max; i++) {
@@ -121,7 +110,7 @@ const functions = () => {
     }
 
     return `Perfect numbers in a range between ${min} & ${max} are: ${perfectNumbers}.`;
-  }
+  };
 
   console.log(perfectNumbersInRange(1, 1000));
 };

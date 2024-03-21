@@ -9,11 +9,11 @@ import loopConditions from "./js/loops-conditions.js";
 
 // Objects
 import objects from "./js/objects.js";
-objects();
+// objects();
 
 // Functions
 import functions from "./js/functions.js";
-
+functions();
 // Arrays
 import arrays from "./js/arrays.js";
 
