@@ -13,9 +13,10 @@ import objects from "./js/objects.js";
 
 // Functions
 import functions from "./js/functions.js";
-functions();
+// functions();
 // Arrays
 import arrays from "./js/arrays.js";
+arrays();
 
-
-
+import locStorage from "./js/local-storage.js";
+locStorage();
