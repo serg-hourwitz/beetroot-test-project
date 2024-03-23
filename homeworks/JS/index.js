@@ -14,9 +14,16 @@ import objects from "./js/objects.js";
 // Functions
 import functions from "./js/functions.js";
 // functions();
-// Arrays
-import arrays from "./js/arrays.js";
-arrays();
 
+// Arrays
+  // storage
+import arrays from "./js/arrays-storage.js";
+// arraysStorage();
+
+  //methods
+import arraysMethods from "./js/arrays-methods.js";
+arraysMethods();
+
+// Local storage
 import locStorage from "./js/local-storage.js";
-locStorage();
+// locStorage();
