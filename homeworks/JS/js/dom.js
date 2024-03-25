@@ -1,7 +1,7 @@
 const dom = () => {
   const createPlayList = () => {
-    const title = document.getElementById("playlist-title");
-    title.classList.add("playlist-title");
+    const DOMTitle = document.getElementById("playlist-title");
+    DOMTitle.classList.add("playlist-title");
     const DOMList = document.getElementById("js-list");
     DOMList.classList.add('js-list');
     const playList = [
@@ -55,7 +55,7 @@ const dom = () => {
     ];
 
     setTimeout(() => {
-      title.style.color = "green";
+      DOMTitle.style.color = "green";
     }, 3000);
 
     if (DOMList) {
