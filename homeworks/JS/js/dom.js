@@ -3,7 +3,7 @@ const dom = () => {
     const DOMTitle = document.getElementById("playlist-title");
     DOMTitle.classList.add("playlist-title");
     const DOMList = document.getElementById("js-list");
-    DOMList.classList.add('js-list');
+    DOMList.classList.add("js-list");
     const playList = [
       {
         author: "LED ZEPPELIN",
@@ -54,9 +54,11 @@ const dom = () => {
       },
     ];
 
-    setTimeout(() => {
-      DOMTitle.style.color = "green";
-    }, 3000);
+    if (DOMTitle) {
+      setTimeout(() => {
+        DOMTitle.style.color = "green";
+      }, 3000);
+    }
 
     if (DOMList) {
       playList.forEach((item) => {
@@ -87,7 +89,6 @@ const dom = () => {
   };
 
   createPlayList();
-
 };
 
 export default dom;
