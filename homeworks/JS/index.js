@@ -22,8 +22,12 @@ import arrays from "./js/arrays-storage.js";
 
   //methods
 import arraysMethods from "./js/arrays-methods.js";
-arraysMethods();
+// arraysMethods();
 
 // Local storage
 import locStorage from "./js/local-storage.js";
 // locStorage();
+
+// DOM
+import dom from "./js/dom.js";
+dom();

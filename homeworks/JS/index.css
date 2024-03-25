@@ -1,0 +1,14 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.playlist-title {
+  color: red;
+  margin-bottom: 15px;
+}
+
+.list-item {
+  padding-bottom: 10px;
+}
