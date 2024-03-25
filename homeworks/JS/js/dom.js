@@ -3,6 +3,7 @@ const dom = () => {
     const title = document.getElementById("playlist-title");
     title.classList.add("playlist-title");
     const DOMList = document.getElementById("js-list");
+    DOMList.classList.add('js-list');
     const playList = [
       {
         author: "LED ZEPPELIN",
@@ -53,18 +54,40 @@ const dom = () => {
       },
     ];
 
+    setTimeout(() => {
+      title.style.color = "green";
+    }, 3000);
+
     if (DOMList) {
       playList.forEach((item) => {
         {
           const li = document.createElement("li");
           li.classList.add("list-item");
-          li.innerText = `author: ${item.author}, \n song: "${item.song}"`;
+
+          const spanAuthor = document.createElement("span");
+          const spanSong = document.createElement("span");
+
+          spanAuthor.innerText = `author: ${item.author} \n`;
+          spanSong.innerText = `song: "${item.song}"`;
+
+          spanAuthor.classList.add("author");
+          spanSong.classList.add("song");
+
+          setTimeout(() => {
+            spanAuthor.style.color = "red";
+          }, 3000);
+
+          li.appendChild(spanAuthor);
+          li.appendChild(spanSong);
+
           DOMList.appendChild(li);
         }
       });
     }
   };
+
   createPlayList();
+
 };
 
 export default dom;

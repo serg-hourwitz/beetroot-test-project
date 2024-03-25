@@ -9,6 +9,20 @@
   margin-bottom: 15px;
 }
 
+.js-list {
+  margin: 30px;
+}
+
 .list-item {
-  padding-bottom: 10px;
+  padding-bottom: 20px;
+}
+
+.author {
+  display: block;
+  font-style: italic;
+  margin-bottom: 5px;
+}
+
+.song {
+  font-weight: bold;
 }
