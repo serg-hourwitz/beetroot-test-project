@@ -31,7 +31,7 @@
             <div class="left-form-block block">
               <!-- form left -->
               <h1 class="form-title">Create an Account</h1>
-              <form method="get" class="form form-left">
+              <form method="post" class="form form-left" id="js-form-left">
                 <!-- top -->
                 <div class="personal-data">
                   <!-- first name -->
@@ -42,9 +42,8 @@
                       name="fname"
                       id="fname"
                       class="input-field"
-                      required
                     />
-                    <div class="error"></div>
+                    <div class="error" id="js-left-form-fname-error"></div>
                   </label>
                   <!-- last name -->
                   <label class="lname-label">
@@ -54,9 +53,8 @@
                       name="lname"
                       id="lname"
                       class="input-field"
-                      required
                     />
-                    <div class="error"></div>
+                    <div class="error" id="js-left-form-lname-error"></div>
                   </label>
                   <!-- email -->
                   <label class="email-label">
@@ -66,9 +64,8 @@
                       name="email"
                       id="email"
                       class="input-field"
-                      required
                     />
-                    <div class="error"></div>
+                    <div class="error" id="js-left-form-email-error"></div>
                   </label>
                   <span class="text"
                     >We'll never share your email with anyone else.</span
@@ -81,19 +78,12 @@
                     name="sex"
                     id="male"
                     value="male"
-                    required
                     checked
                   />
                   <label for="male" class="sex-label">
                     <div class="input-name input-sex">Male</div>
                   </label>
-                  <input
-                    type="radio"
-                    name="sex"
-                    id="female"
-                    value="female"
-                    required
-                  />
+                  <input type="radio" name="sex" id="female" value="female" />
                   <label for="female" class="sex-label">
                     <div class="input-name input-sex">Female</div>
                   </label>
@@ -110,12 +100,12 @@
                         alt="arrow"
                       />
                     </div>
-                    <select name="country" id="country" class="select" required>
+                    <select name="country" id="country" class="select">
                       <option value="Select" selected>Select</option>
                       <option value="Ukraine">Ukraine</option>
                       <option value="Another" disabled>Another</option>
                     </select>
-                    <div class="error"></div>
+                    <div class="error" id="js-left-form-country-error"></div>
                   </label>
                   <!-- city -->
                   <label class="label">
@@ -125,9 +115,8 @@
                       name="city"
                       id="city"
                       class="input-field"
-                      required
                     />
-                    <div class="error"></div>
+                    <div class="error" id="js-left-form-city-error"></div>
                   </label>
                   <!-- button -->
                   <button class="sign-up-btn btn" type="submit">
@@ -151,7 +140,7 @@
             <!-- * form right -->
             <div class="right-form-block block">
               <h1 class="form-title">Profile</h1>
-              <form method="get" class="form form-right">
+              <form method="get" class="form form-right" id="js-form-right">
                 <!-- input file -->
                 <div class="form-right-file">
                   <div class="photo-frame">
@@ -160,13 +149,13 @@
                   <div class="label-wrapper">
                     <label class="label label-file">
                       <div class="select-file-container">
-                        <div class="select-file">_______________</div>
+                        <div class="select-file" id="js-right-form-file-error"></div>
                         <img
                           class="select-file-img"
                           src="./scss/assets/photo-camera.svg"
                           alt="photo-camera"
                         />
-                        <input type="file" class="input-file" />
+                        <input type="file" class="input-file" name="file" id="file"/>
                       </div>
                       <button class="button-reset" type="reset">
                         <span>
@@ -180,8 +169,7 @@
                               fill-rule="evenodd"
                               clip-rule="evenodd"
                               d="M1.00001 10.6667C1.00001 11.4 1.60001 12 2.33334 12H7.66668C8.40001 12 9.00001 11.4 9.00001 10.6667V2.66667H1.00001V10.6667ZM9.66668 0.666667H7.33334L6.66668 0H3.33334L2.66668 0.666667H0.333344V2H9.66668V0.666667Z"
-                            /></svg
-                        ></span>
+                            /></svg></span>
                       </button>
                     </label>
                     <div class="input-file-text">Up to 1 MB (300x300 px)</div>
@@ -196,9 +184,8 @@
                       name="name"
                       id="name"
                       class="input-field"
-                      required
                     />
-                    <div class="error"></div>
+                    <div class="error" id="js-right-form-name-error"></div>
                   </label>
                   <!-- email -->
                   <label class="email-label-right">
@@ -208,9 +195,8 @@
                       name="email"
                       id="email-r"
                       class="input-field"
-                      required
                     />
-                    <div class="error"></div>
+                    <div class="error" id="js-right-form-email-error"></div>
                   </label>
                   <!-- country -->
                   <label class="label">
@@ -222,17 +208,12 @@
                         alt="arrow"
                       />
                     </div>
-                    <select
-                      name="country"
-                      id="country-right"
-                      class="select"
-                      required
-                    >
+                    <select name="country" id="country-right" class="select">
                       <option value="Select" selected>Select</option>
                       <option value="Ukraine">Ukraine</option>
                       <option value="Another" disabled>Another</option>
                     </select>
-                    <div class="error"></div>
+                    <div class="error" id="js-right-form-country-error"></div>
                   </label>
                   <!-- city -->
                   <label class="label">
@@ -242,9 +223,8 @@
                       name="city"
                       id="city-right"
                       class="input-field"
-                      required
                     />
-                    <div class="error"></div>
+                    <div class="error" id="js-right-form-city-error"></div>
                   </label>
                   <!-- ZIP code -->
                   <label class="label">
@@ -254,9 +234,8 @@
                       name="zip"
                       id="zip"
                       class="input-field"
-                      required
                     />
-                    <div class="error"></div>
+                    <div class="error" id="js-right-form-zip-error"></div>
                   </label>
                   <!-- Phone Number -->
                   <label class="label">
@@ -266,9 +245,8 @@
                       name="phone"
                       id="phone"
                       class="input-field"
-                      required
                     />
-                    <div class="error"></div>
+                    <div class="error" id="js-right-form-phone-error"></div>
                   </label>
                   <!-- button update -->
                   <button class="button-update btn" type="submit">
@@ -281,5 +259,7 @@
         </div>
       </main>
     </div>
+    <!-- * Scripts -->
+    <script defer type="module" src="./index.js"></script>
   </body>
 </html>
