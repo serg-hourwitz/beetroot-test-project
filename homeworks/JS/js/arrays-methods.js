@@ -3,7 +3,7 @@ const arraysMethods = () => {
 
 */
 
-  let shoppingList = [
+  const shoppingList = [
     {
       name: "milk",
       quantity: 1,
@@ -59,9 +59,9 @@ const arraysMethods = () => {
 
   const markAsPurchased = (productName) => {
     shoppingList.forEach((item) => {
-      if (productName === item.name && item.isBought !== true) {
+      if (productName === item.name && !item.isBought) {
         console.log(item.name + " is purchased.");
-      } else if (productName === item.name && item.isBought === true) {
+      } else if (productName === item.name && item.isBought) {
         console.log(item.name + " is purchased soon.");
       }
     });
@@ -134,7 +134,7 @@ const arraysMethods = () => {
   addToShoppingList("bread", 1, 16);
   console.log("-----------------------");
 
-  // Підрахунок суми всіх продуктів (враховуючи кількість кожного) в списку.//
+  // Підрахунок суми всіх продуктів (враховуючи кількість кожного) в списку.
 
   let totalCount = 0;
 
