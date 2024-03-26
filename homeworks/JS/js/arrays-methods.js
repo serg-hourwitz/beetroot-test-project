@@ -147,7 +147,7 @@ const arraysMethods = () => {
 
   // Підрахунок суми всіх (не) придбаних продуктів.
 
-  function calculatePurchasedTotal(purchased) {
+  const calculatePurchasedTotal = (purchased) => {
     let total = 0;
 
     shoppingList.forEach((item) => {
@@ -165,7 +165,7 @@ const arraysMethods = () => {
 
   /*Показання продуктів в залежності від суми, (від більшого до меншого / від меншого до більшого, в залежності від параметра функції, який вона приймає)*/
 
-  function sortProductsByTotal(ascending) {
+  const sortProductsByTotal = (ascending) => {
 
     shoppingList.sort((a, b) => {
       if (ascending) {
