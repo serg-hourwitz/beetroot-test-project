@@ -1,17 +1,9 @@
 const dom = () => {
   const createPlayList = () => {
-    const DOMTitle = document.getElementById("playlist-title");
-    DOMTitle.classList.add("playlist-title");
     const DOMList = document.getElementById("js-list");
     DOMList.classList.add("js-list");
 
-    if (DOMTitle) {
-      setTimeout(() => {
-        DOMTitle.style.color = "green";
-      }, 3000);
-    }
-
-    if (DOMList) {
+    if (DOMList && DOMList.classList.contains("js-list")) {
       const addItemToList = (author, song) => {
         const li = document.createElement("li");
         li.classList.add("list-item");
@@ -24,10 +16,6 @@ const dom = () => {
 
         spanAuthor.classList.add("author");
         spanSong.classList.add("song");
-
-        setTimeout(() => {
-          spanAuthor.style.color = "red";
-        }, 3000);
 
         li.appendChild(spanAuthor);
         li.appendChild(spanSong);
@@ -85,9 +73,22 @@ const dom = () => {
         },
       ];
 
-      playList.forEach((item) => {
-        addItemToList(item.author, item.song);
-      });
+      if (Array.isArray(playList)) {
+        playList.forEach((item) => {
+          // Перевірка кожного елементу на об'єкт з властивостями author та song
+          if (typeof item === "object" && "author" in item && "song" in item) {
+            addItemToList(item.author, item.song);
+          } else {
+            console.error("Invalid playlist item:", item);
+          }
+        });
+      } else {
+        console.error("Playlist is not an array:", playList);
+      }
+    } else {
+      console.error(
+        "Playlist DOM element not found or doesn't have required class"
+      );
     }
   };
 
