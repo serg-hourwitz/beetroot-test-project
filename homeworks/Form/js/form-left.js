@@ -4,6 +4,7 @@ const registrationFormLeft = () => {
   const DOMFormLeft = document.getElementById("js-form-left");
   const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   const CITY_REGEX = /^[a-zA-Z\s]*$/;
+  const leftFormDataArr = [];
 
 
   if (!DOMFormLeft) return;
@@ -12,6 +13,8 @@ const registrationFormLeft = () => {
     e.preventDefault();
 
     const formLeft = new FormData(e.target);
+
+    const leftFormDataObj = {};
 
     // first name
     const fname = formLeft.get("fname");
@@ -28,6 +31,8 @@ const registrationFormLeft = () => {
     }
     setError("js-left-form-fname-error", "");
 
+    leftFormDataObj.fname = fname;
+
     // last name
     const lname = formLeft.get("lname");
 
@@ -43,6 +48,8 @@ const registrationFormLeft = () => {
     }
     setError("js-left-form-lname-error", "");
 
+    leftFormDataObj.lname = lname;
+
     // e-mail
     const email = formLeft.get("email");
 
@@ -57,9 +64,12 @@ const registrationFormLeft = () => {
 
     setError("js-left-form-email-error", "");
 
+    leftFormDataObj.email = email;
+
     //  gender
     const sex = formLeft.get("sex");
-    console.log("sex", sex);
+    
+    leftFormDataObj.sex = sex;
 
     // country
     const country = formLeft.get("country");
@@ -68,6 +78,8 @@ const registrationFormLeft = () => {
     }
 
     setError("js-left-form-country-error", "");
+
+    leftFormDataObj.country = country;
 
     // city
     const city = formLeft.get("city");
@@ -89,7 +101,14 @@ const registrationFormLeft = () => {
     }
 
     setError("js-left-form-city-error", "");
+
+    leftFormDataObj.city = city;
+
+    leftFormDataArr.push(leftFormDataObj);
+
+    const leftFormDataArrStr = JSON.stringify(leftFormDataArr);
+    localStorage.setItem("left-form-data", leftFormDataArrStr);
   });
 };
 
-// export default registrationFormLeft;
+export default registrationFormLeft;

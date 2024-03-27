@@ -6,6 +6,7 @@ const registrationFormRight = () => {
   const PHONE_REGEX = /^\d{10}$/;
   const ZIP_REGEX = /^\d{5}(?:[-\s]\d{4})?$/;
   const CITY_REGEX = /^[a-zA-Z\s]*$/;
+  const rightFormDataArr = [];
 
   if (!DOMFormRight) return;
 
@@ -14,19 +15,22 @@ const registrationFormRight = () => {
 
     const formRight = new FormData(e.target);
 
+    const rightFormDataObj = {};
+
     // file
     const file = formRight.get("file");
-    console.log(file);
 
     if (file.name === "") {
       return setError("js-right-form-file-error", "select a file");
     }
-
+      
     if (file.size > 1000000) {
       return setError("js-right-form-file-error", "file is too big");
-    }
+    } 
 
     setError("js-right-form-file-error", "");
+
+    rightFormDataObj.file = file;
 
     // name
     const name = formRight.get("name");
@@ -44,7 +48,8 @@ const registrationFormRight = () => {
     setError("js-right-form-name-error", "");
 
     // e-mail
-    const email = formRight.get("email");
+    let email = formRight.get("email");
+    // console.log(email);
 
     if (!email) {
       return setError("js-right-form-email-error", "enter email");
@@ -57,6 +62,8 @@ const registrationFormRight = () => {
 
     setError("js-right-form-email-error", "");
 
+    rightFormDataObj.email = email;
+
     // country
     const country = formRight.get("country");
     if (country === "Select") {
@@ -64,6 +71,8 @@ const registrationFormRight = () => {
     }
 
     setError("js-right-form-country-error", "");
+
+    rightFormDataObj.country = country;
 
     // city
     const city = formRight.get("city");
@@ -85,6 +94,8 @@ const registrationFormRight = () => {
 
     setError("js-right-form-city-error", "");
 
+    rightFormDataObj.city = city;
+
     // zip
 
     const zip = formRight.get("zip");
@@ -99,6 +110,8 @@ const registrationFormRight = () => {
     }
     setError("js-right-form-zip-error", "");
 
+    rightFormDataObj.zip = zip;
+
     // phone
 
     const phone = formRight.get("phone");
@@ -112,6 +125,13 @@ const registrationFormRight = () => {
       return setError("js-right-form-phone-error", "enter correct phone");
     }
     setError("js-right-form-phone-error", "");
+
+    rightFormDataObj.phone = phone;
+
+    rightFormDataArr.push(rightFormDataObj);
+
+    const rightFormDataArrStr = JSON.stringify(rightFormDataArr);
+    localStorage.setItem("right-form-data", rightFormDataArrStr);
   });
 };
 
