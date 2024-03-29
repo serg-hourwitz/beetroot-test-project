@@ -1,4 +1,5 @@
 const dom = () => {
+  // Створити сторінку, що показує нумерований список пісень
   const createPlayList = () => {
     const DOMList = document.getElementById("js-list");
     DOMList.classList.add("js-list");
@@ -93,6 +94,76 @@ const dom = () => {
   };
 
   createPlayList();
+
+  // Створити HTML-сторінку з кнопкою "Відкрити" і модальним вікном. На модальном вікні повинен бути текст і кнопка "Закрити". Спочатку модальне вікно не відображається. При кліку на кнопку "Відкрити" з'являється модальне вікно, на кнопку "Закрити" — зникає.
+
+  // Створення та стилізація елементів
+  const modalContainer = document.createElement("div");
+  modalContainer.classList.add("modal");
+
+  const openButton = document.createElement("button");
+  openButton.setAttribute("type", "button");
+  openButton.setAttribute("id", "open");
+  openButton.textContent = "OPEN";
+
+  const modalWindow = document.createElement("div");
+  modalWindow.setAttribute("id", "mwindow");
+  modalWindow.classList.add("mwindow");
+  modalWindow.hidden = true;
+
+  modalWindow.style.cssText = `width: 200px;
+  height: 200px;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 0 auto;`;
+
+  const paragraph = document.createElement("p");
+  paragraph.textContent =
+    "Lorem ipsum dolor, sit amet consectetur adipisicing elit.";
+
+  const closeButton = document.createElement("button");
+  closeButton.setAttribute("type", "button");
+  closeButton.setAttribute("id", "close");
+  closeButton.textContent = "CLOSE";
+
+  // Додавання елементів до DOM
+  modalWindow.appendChild(paragraph);
+  modalWindow.appendChild(closeButton);
+
+  modalContainer.appendChild(openButton);
+  modalContainer.appendChild(modalWindow);
+
+  document.body.appendChild(modalContainer);
+
+  // перевірки
+
+  const modalContainerExists = document.body.contains(modalContainer);
+  const openButtonExists = document.body.contains(openButton);
+  const modalWindowExists = document.body.contains(modalWindow);
+  const closeButtonExists = document.body.contains(closeButton);
+
+
+  if (
+    modalContainerExists &&
+    openButtonExists &&
+    modalWindowExists &&
+    closeButtonExists &&
+    modalWindow.hidden 
+    
+  ) {
+    // функція для відкривання/закривання вікна
+
+    const operateModal = () => {
+
+      openButton.addEventListener("click", () => modalWindow.hidden = false);
+      closeButton.addEventListener("click", () => modalWindow.hidden = true);
+
+    };
+    operateModal();
+  }
+
+  
 };
 
 export default dom;
