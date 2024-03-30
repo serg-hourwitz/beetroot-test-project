@@ -20,6 +20,7 @@ const events = () => {
   }
 
   // Функція для заміни textarea на div
+  
   function switchToDiv() {
     const textarea = document.querySelector("textarea");
     if (!textarea) {
