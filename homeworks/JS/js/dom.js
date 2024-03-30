@@ -100,7 +100,7 @@ const dom = () => {
   // Створення та стилізація елементів
   const modalContainer = document.createElement("div");
   modalContainer.classList.add("modal");
-  modalContainer.style.marginBottom = "50px";
+  modalContainer.style.cssText = `margin-top: 50px; margin-bottom: 50px`;
 
   const openButton = document.createElement("button");
   openButton.setAttribute("type", "button");
@@ -161,6 +161,126 @@ const dom = () => {
   }
 
   // Створити HTML-сторінку зі світлофором і кнопкою, яка перемикає світлофор на наступний колір.
+
+  /*ДЛЯ СТАНДАРТНОГО СВІТЛОФОРА*/
+
+  // Створення та стилізація елементів
+  const title = document.createElement("h2");
+  title.style.cssText = `text-align: center;
+  margin-bottom: 50px`;
+  title.textContent = "Traffic lights";
+
+  const trafficLights = document.createElement("div");
+  trafficLights.classList.add("traffic-lights");
+  trafficLights.style.cssText = `width: 150px;
+    height: 400px;
+    background-color: #333;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto 50px;
+    padding: 20px;`;
+
+  const lightStyles = `width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 5px solid #111;`;
+
+  const red = document.createElement("div");
+  red.style.cssText = lightStyles;
+
+  const yellow = document.createElement("div");
+  yellow.style.cssText = lightStyles;
+
+  const green = document.createElement("div");
+  green.style.cssText = lightStyles;
+
+  const triggerButton = document.createElement("button");
+  triggerButton.setAttribute("type", "button");
+  triggerButton.setAttribute("id", "trigger");
+  triggerButton.textContent = "TRIGGER";
+
+  // Додавання елементів до DOM
+  document.body.appendChild(title);
+
+  trafficLights.appendChild(red);
+  trafficLights.appendChild(yellow);
+  trafficLights.appendChild(green);
+
+  trafficLights.appendChild(triggerButton);
+
+  document.body.appendChild(trafficLights);
+
+  // перевірки
+
+  const titleExists = document.body.contains(title);
+  const trafficLightsExists = document.body.contains(trafficLights);
+  const redExists = document.body.contains(red);
+  const yellowExists = document.body.contains(yellow);
+  const greenExists = document.body.contains(green);
+  const triggerButtonExists = document.body.contains(triggerButton);
+
+  if (
+    titleExists &&
+    trafficLightsExists &&
+    redExists &&
+    yellowExists &&
+    greenExists &&
+    triggerButtonExists
+  ) {
+    triggerButton.addEventListener("click", () => {
+      // Перевірка поточного кольору і перемикання на наступний
+      if (red.style.backgroundColor === "red") {
+        red.style.backgroundColor = "";
+        yellow.style.backgroundColor = "yellow";
+      } else if (yellow.style.backgroundColor === "yellow") {
+        yellow.style.backgroundColor = "";
+        green.style.backgroundColor = "green";
+      } else if (green.style.backgroundColor === "green") {
+        green.style.backgroundColor = "";
+        red.style.backgroundColor = "red";
+      } else {
+        // Якщо жоден з кольорів не встановлений, встановлюємо червоний за замовчуванням
+        red.style.backgroundColor = "red";
+      }
+    });
+  }
+
+  /*ДЛЯ ДОВІЛЬНОЇ КІЛЬКОСТІ*/
+
+  const lightBox = document.querySelector(".lightbox");
+
+  const lights = document.querySelectorAll(".light");
+  console.log(lights);
+
+  const trigger = document.getElementById("trigger-light-btn");
+
+  // перевірка
+  const lightBoxExists = document.body.contains(lightBox);
+  const triggerExists = document.body.contains(trigger);
+
+  if (lightBoxExists && triggerExists && lights.length > 0) {
+    let currentIndex = 0;
+
+    // Створення обробника подій для кнопки
+    trigger.addEventListener("click", () => {
+      // Зняття класу active з усіх світлових елементів
+      lights.forEach((light) => {
+        light.classList.remove("active");
+      });
+
+      // Додавання класу active до наступного світлового елемента
+      lights[currentIndex].classList.add("active");
+
+      // Інкрементуємо індекс, але перевіряємо, чи не вийшли за межі масиву
+      currentIndex++;
+      if (currentIndex >= lights.length) {
+        currentIndex = 0;
+      }
+    });
+  }
 };
 
 export default dom;
