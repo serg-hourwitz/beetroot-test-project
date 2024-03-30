@@ -253,7 +253,6 @@ const dom = () => {
   const lightBox = document.querySelector(".lightbox");
 
   const lights = document.querySelectorAll(".light");
-  console.log(lights);
 
   const trigger = document.getElementById("trigger-light-btn");
 
