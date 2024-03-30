@@ -4,3 +4,58 @@
   padding: 0;
 }
 
+textarea {
+  width: 100%;
+  height: 200px;
+}
+
+/* table */
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  cursor: pointer;
+  /* Змінюємо курсор на вказівник при наведенні на заголовок стовпця */
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* text */
+
+.resizeable {
+  width: 300px;
+  height: 200px;
+  border: 2px solid black;
+  resize: both;
+  /* Дозволяємо зміну розміру блоку */
+  overflow: auto;
+  /* Додаємо прокрутку в разі необхідності */
+  padding: 10px;
+  box-sizing: border-box;
+  /* Включаємо padding в обчислення розміру */
+  position: relative;
+  /* Для позиціонування підсказки */
+}
+
+.resize-handle {
+  width: 10px;
+  height: 10px;
+  background-color: black;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  cursor: se-resize;
+  /* Зміна курсору на південно-східну стрілку */
+}

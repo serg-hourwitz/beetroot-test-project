@@ -1,13 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Events</title>
-    <link rel="stylesheet" href="./events.css" />
-  </head>
-  <body>
-    <div class="app"></div>
-    <script defer src="./js/events.js"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Events</title>
+  <link rel="stylesheet" href="./events.css" />
+</head>
+
+<body>
+  <div class="app">
+    <h3>Text editor</h3>
+    <div id="content" style="margin-bottom: 50px;">
+      This is some editable text. Press Ctrl + E to edit.
+    </div>
+    <h3>Table for sort</h3>
+    <table id="myTable" style="margin-bottom: 50px;">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Age</th>
+          <th>Country</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>John</td>
+          <td>25</td>
+          <td>USA</td>
+        </tr>
+        <tr>
+          <td>Anna</td>
+          <td>20</td>
+          <td>Canada</td>
+        </tr>
+        <tr>
+          <td>Peter</td>
+          <td>30</td>
+          <td>UK</td>
+        </tr>
+      </tbody>
+    </table>
+    <h3>Resizeable block</h3>
+    <div class="resizeable" id="resizeable">
+      <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis lorem ut libero malesuada feugiat. Nulla
+        porttitor accumsan tincidunt. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Vivamus
+        suscipit tortor eget felis porttitor volutpat.</div>
+      <div>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec velit neque,
+        auctor
+        sit amet aliquam vel, ullamcorper sit amet ligula. Curabitur non nulla sit amet nisl tempus convallis quis ac
+        lectus.</div>
+      <div>Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Nulla porttitor accumsan tincidunt. Curabitur
+        arcu
+        erat, accumsan id imperdiet et, porttitor at sem. Donec sollicitudin molestie malesuada.</div>
+    </div>
+  </div>
+  <script defer src="./js/events.js"></script>
+</body>
+
 </html>
