@@ -100,6 +100,7 @@ const dom = () => {
   // Створення та стилізація елементів
   const modalContainer = document.createElement("div");
   modalContainer.classList.add("modal");
+  modalContainer.style.marginBottom = "50px";
 
   const openButton = document.createElement("button");
   openButton.setAttribute("type", "button");
@@ -143,27 +144,23 @@ const dom = () => {
   const modalWindowExists = document.body.contains(modalWindow);
   const closeButtonExists = document.body.contains(closeButton);
 
-
   if (
     modalContainerExists &&
     openButtonExists &&
     modalWindowExists &&
     closeButtonExists &&
-    modalWindow.hidden 
-    
+    modalWindow.hidden
   ) {
     // функція для відкривання/закривання вікна
 
     const operateModal = () => {
-
-      openButton.addEventListener("click", () => modalWindow.hidden = false);
-      closeButton.addEventListener("click", () => modalWindow.hidden = true);
-
+      openButton.addEventListener("click", () => (modalWindow.hidden = false));
+      closeButton.addEventListener("click", () => (modalWindow.hidden = true));
     };
     operateModal();
   }
 
-  
+  // Створити HTML-сторінку зі світлофором і кнопкою, яка перемикає світлофор на наступний колір.
 };
 
 export default dom;
