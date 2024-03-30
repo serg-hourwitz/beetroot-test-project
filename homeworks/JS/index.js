@@ -30,5 +30,5 @@ import locStorage from "./js/local-storage.js";
 
 // DOM
 import dom from "./js/dom.js";
-dom();
+// dom();
 
