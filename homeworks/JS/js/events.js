@@ -5,7 +5,7 @@ const events = () => {
   function switchToTextarea() {
     const contentDiv = document.getElementById("content");
     if (!contentDiv) {
-      throw new Error("немає тега div!");
+      throw new Error("немає тега div");
     }
     const text = contentDiv.innerText.trim(); // Отримання тексту без пробілів
     // Створення елементу textarea та встановлення тексту
@@ -23,7 +23,7 @@ const events = () => {
   function switchToDiv() {
     const textarea = document.querySelector("textarea");
     if (!textarea) {
-      throw new Error("немає тега textarea!");
+      throw new Error("немає тега textarea");
     }
     const text = textarea.value;
 
@@ -93,7 +93,7 @@ const events = () => {
   // Отримуємо елемент блоку та його маркер розміру
   const resizeable = document.getElementById("resizeable");
   if (!resizeable) {
-    throw new Error ('відсутній блок тексту!')ж
+    throw new Error('немає блоку з текстом!');
   }
   const resizeHandle = document.createElement("div");
   resizeHandle.className = "resize-handle";
