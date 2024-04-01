@@ -14,10 +14,10 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   function searchMovies(searchTerm, type, page = 1) {
-    const apiKey = "5f873eb1"; // Вставте сюди ваш ключ API OMDB
+    const apiKey = "5f873eb1"; 
     const url = `http://www.omdbapi.com/?apikey=${apiKey}&s=${searchTerm}&type=${type}&page=${page}`;
 
-    fetch(url)
+    fetch(url, {method: 'GET'})
       .then((response) => response.json())
       .then((data) => {
         if (data.Response === "True") {
@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   function displayPagination(totalResults, currentPage, searchTerm, type) {
-    const totalPages = Math.ceil(totalResults / 10); // 10 movies per page
+    const totalPages = Math.ceil(totalResults / 10); 
     pagination.innerHTML = "";
     for (let i = 1; i <= totalPages; i++) {
       const pageButton = document.createElement("button");
@@ -65,7 +65,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   function fetchMovieDetails(movieId) {
-    const apiKey = "5f873eb1"; // Вставте сюди ваш ключ API OMDB
+    const apiKey = "5f873eb1"; 
     const url = `http://www.omdbapi.com/?apikey=${apiKey}&i=${movieId}`;
 
     fetch(url)
