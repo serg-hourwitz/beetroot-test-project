@@ -65,7 +65,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   function fetchMovieDetails(movieId) {
-    const apiKey = "YOUR_API_KEY"; // Вставте сюди ваш ключ API OMDB
+    const apiKey = "5f873eb1"; // Вставте сюди ваш ключ API OMDB
     const url = `http://www.omdbapi.com/?apikey=${apiKey}&i=${movieId}`;
 
     fetch(url)
