@@ -1,89 +1,149 @@
-document.addEventListener("DOMContentLoaded", function () {
-  const form = document.getElementById("searchForm");
-  const searchInput = document.getElementById("searchInput");
-  const typeSelect = document.getElementById("typeSelect");
-  const moviesList = document.getElementById("moviesList");
-  const pagination = document.getElementById("pagination");
-  const movieDetails = document.getElementById("movieDetails");
+import { getById } from './helpers/get.js';
 
-  form.addEventListener("submit", function (event) {
+const getMovieInfo = () => {
+  const DOMForm = getById('search-form');
+  const DOMSearchInput = getById('search-input');
+  const DOMTypeSelect = getById('type-select');
+
+  if (!DOMForm) {
+    throw new Error('no form!');
+  }
+  if (!DOMSearchInput) {
+    throw new Error('no input!');
+  }
+  if (!DOMTypeSelect) {
+    throw new Error('no select!');
+  }
+
+  DOMForm.addEventListener('submit', (event) => {
     event.preventDefault();
-    const searchTerm = searchInput.value;
-    const type = typeSelect.value;
+    const searchTerm = DOMSearchInput.value;
+    const type = DOMTypeSelect.value;
     searchMovies(searchTerm, type);
   });
 
-  function searchMovies(searchTerm, type, page = 1) {
-    const apiKey = "5f873eb1"; 
-    const url = `http://www.omdbapi.com/?apikey=${apiKey}&s=${searchTerm}&type=${type}&page=${page}`;
-
-    fetch(url, {method: 'GET'})
-      .then((response) => response.json())
-      .then((data) => {
-        if (data.Response === "True") {
-          displayMovies(data.Search);
-          displayPagination(data.totalResults, page, searchTerm, type);
-        } else {
-          moviesList.innerHTML = "<p>Movie not found!</p>";
-          pagination.innerHTML = "";
-        }
-      })
-      .catch((error) => console.log("Error fetching movies:", error));
-  }
-
-  function displayMovies(movies) {
-    moviesList.innerHTML = "";
-    movies.forEach((movie) => {
-      const movieItem = document.createElement("div");
-      movieItem.innerHTML = `<p>${movie.Title}</p>
-                                  <button class="detailsButton" data-id="${movie.imdbID}">Details</button>`;
-      moviesList.appendChild(movieItem);
-    });
-  }
-
-  function displayPagination(totalResults, currentPage, searchTerm, type) {
-    const totalPages = Math.ceil(totalResults / 10); 
-    pagination.innerHTML = "";
-    for (let i = 1; i <= totalPages; i++) {
-      const pageButton = document.createElement("button");
-      pageButton.textContent = i;
-      if (i === currentPage) {
-        pageButton.disabled = true;
-      }
-      pageButton.addEventListener("click", function () {
-        searchMovies(searchTerm, type, i);
-      });
-      pagination.appendChild(pageButton);
-    }
-  }
-
-  moviesList.addEventListener("click", function (event) {
-    if (event.target.classList.contains("detailsButton")) {
-      const movieId = event.target.getAttribute("data-id");
-      fetchMovieDetails(movieId);
-    }
-  });
-
-  function fetchMovieDetails(movieId) {
-    const apiKey = "5f873eb1"; 
-    const url = `http://www.omdbapi.com/?apikey=${apiKey}&i=${movieId}`;
+  const searchMovies = (searchTerm, type, page = 1) => {
+    const apiKey = '5f873eb1';
+    const url = buildSearchUrl(apiKey, searchTerm, type, page);
 
     fetch(url)
       .then((response) => response.json())
       .then((data) => {
+        if (!data) {
+          throw new Error('no data response!');
+        }
+        if (data.Response === 'True') {
+          displayMovies(data.Search);
+          return displayPagination(data.totalResults, page, searchTerm, type);
+        }
+      })
+      .catch((error) => alert('Error fetching movies:', error))
+      .finally(() => {
+        alert('Fetch movie details completed');
+      });
+  };
+
+  const buildSearchUrl = (apiKey, searchTerm, type, page) => {
+    return `http://www.omdbapi.com/?apikey=${apiKey}&s=${searchTerm}&type=${type}&page=${page}`;
+  };
+
+  const displayMovies = (movies) => {
+    const moviesList = document.createElement('div');
+    moviesList.textContent = '';
+    document.body.appendChild(moviesList);
+
+    movies.forEach((movie) => {
+      const movieItem = document.createElement('div');
+      movieItem.textContent = `${movie.Title}`;
+      moviesList.appendChild(movieItem);
+
+      const movieDetailButton = document.createElement('button');
+      movieDetailButton.setAttribute('type', 'button');
+      movieDetailButton.setAttribute('data-id', `${movie.imdbID}`);
+      movieDetailButton.textContent = 'DETAILS';
+      movieDetailButton.classList.add('detailsButton');
+      movieItem.appendChild(movieDetailButton);
+      moviesList.appendChild(movieItem);
+    });
+  };
+
+  const displayPagination = (totalResults, currentPage, searchTerm, type) => {
+    const totalPages = Math.ceil(totalResults / 10);
+    const pagination = document.createElement('div');
+    pagination.textContent = '';
+
+    for (let i = 1; i <= totalPages; i++) {
+      const pageButton = document.createElement('button');
+      pageButton.textContent = i;
+      if (i === currentPage) {
+        pageButton.disabled = true;
+      }
+      pageButton.addEventListener('click', () => {
+        searchMovies(searchTerm, type, i);
+      });
+      pagination.appendChild(pageButton);
+    }
+  };
+  const moviesList = document.createElement('div');
+
+  moviesList.addEventListener('click', (event) => {
+    if (event.target.classList.contains('detailsButton')) {
+      const movieId = event.target.getAttribute('data-id');
+      fetchMovieDetails(movieId);
+    }
+  });
+
+  const fetchMovieDetails = (movieId) => {
+    const apiKey = '5f873eb1';
+    const url = buildMovieUrl(apiKey, movieId);
+
+    fetch(url)
+      .then((response) => response.json())
+      .then((data) => {
+        if (!data) {
+          throw new Error('no data response!');
+        }
         displayMovieDetails(data);
       })
-      .catch((error) => console.log("Error fetching movie details:", error));
-  }
+      .catch((error) => alert('Error fetching movie details:', error))
+      .finally(() => {
+        alert('Fetch movie details completed');
+      });
+  };
 
-  function displayMovieDetails(movie) {
-    movieDetails.innerHTML = `
-            <h2>${movie.Title}</h2>
-            <p>${movie.Plot}</p>
-            <p>Released: ${movie.Released}</p>
-            <p>Runtime: ${movie.Runtime}</p>
-            <p>Genre: ${movie.Genre}</p>
-            <img src="${movie.Poster}" alt="${movie.Title} poster">
-        `;
-  }
-});
+  const buildMovieUrl = (apiKey, movieId) => {
+    return `http://www.omdbapi.com/?apikey=${apiKey}&i=${movieId}`;
+  };
+
+  const displayMovieDetails = (movie) => {
+    const movieDetails = document.createElement('div');
+    document.body.appendChild(movieDetails);
+
+    const movieTitle = document.createElement('h2');
+    movieTitle.textContent = `${movie.Title}`;
+    movieDetails.appendChild(movieTitle);
+
+    const moviePlot = document.createElement('p');
+    moviePlot.textContent = `${movie.Plot}`;
+    movieDetails.appendChild(moviePlot);
+
+    const movieReleased = document.createElement('p');
+    movieReleased.textContent = `Released: ${movie.Released}`;
+    movieDetails.appendChild(movieReleased);
+
+    const movieRuntime = document.createElement('p');
+    movieRuntime.textContent = `Runtime: ${movie.Runtime}`;
+    movieDetails.appendChild(movieRuntime);
+
+    const movieGenre = document.createElement('p');
+    movieGenre.textContent = `Genre: ${movie.Genre}`;
+    movieDetails.appendChild(movieGenre);
+
+    const moviePoster = document.createElement('img');
+    moviePoster.setAttribute('src', `${movie.Poster}`);
+    moviePoster.setAttribute('alt', `${movie.Title}`);
+    movieDetails.appendChild(moviePoster);
+  };
+};
+
+getMovieInfo();

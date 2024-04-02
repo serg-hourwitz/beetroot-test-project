@@ -11,12 +11,12 @@
 <body>
   <div class="app">
     <h1>Movie Search</h1>
-    <form method="get" id="searchForm">
+    <form method="get" id="search-form">
       <label>
-        <input type="text" id="searchInput" placeholder="Enter movie title">
+        <input type="text" id="search-input" placeholder="Enter movie title">
       </label>
       <label>
-        <select id="typeSelect">
+        <select id="type-select">
           <option value="movie">Movie</option>
           <option value="series">Series</option>
           <option value="episode">Episode</option>
@@ -26,12 +26,8 @@
       <button type="reset">Clean</button>
     </form>
 
-    <div id="moviesList"></div>
-    <div id="pagination"></div>
-    <div id="movieDetails"></div>
-
   </div>
-  <script src="ajax.js"></script>
+  <script type="module" defer src="ajax.js"></script>
 </body>
 
 </html>
